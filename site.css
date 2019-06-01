@@ -100,11 +100,14 @@ img {
 .fixed-height-2 {height: 16px;}
 .browser-height {height: 90vh;}
 
-.redBack{background-color: #dadfe8;}
+.unselectedBack{background-color: #9b9fa5;}
+.activeBack{background-color: lightblue;}
+
+/*actually a light grey*/.redBack{background-color: #dadfe8;}
 .orangeBack{background-color: orange;}
-.yellowBack{background-color: #9b9fa5;}
+/*actually a grey*/.yellowBack{background-color: #9b9fa5;}
 .greenBack{background-color: lightgreen;}
-.blueBack{background-color: #67696d;}
+/*actually a dark grey*/.blueBack{background-color: #67696d;}
 .purpleBack{background-color: lavender;}
 .blackTxt {color: black;}
 .whiteTxt {color: white;}
