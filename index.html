@@ -21,7 +21,7 @@
 	</head>
 
 	<body>
-		<div class="row">
+		<div class="ourNavBar">
 			<div class="col activeBack centered"><a class="blackTxt" href="index.html">Home</a></div>
 			<div class="col inactiveBack centered"><a class="blackTxt" href="fanficDex.html">Fanfiction</a></div>
 			<div class="col inactiveBack centered"><a class="blackTxt" href="csProjectDex.html">Computer Science Projects</a></div>
@@ -39,24 +39,17 @@
 		<footer class="centered">© 2019 by me, (Marion) Fiona 'Fif' Gallagher</footer>
 
 		<script>
-		$(document).ready(function() {
-			$("#hiding-button").click(function() {
-				$(".hide-me").animate( {
-					height: 'toggle'
-				});
-			});
-		});
 		function engorge(){
 			(document.body.style.fontSize == "30px") {
 				document.body.style.fontSize="15px";
 			} else { document.body.style.fontSize="30px";}
 		}
-                var ourNavBar = document.querySelector('.navBar');
-                if (ourNavBar.style.backgroundColor === "lightblue") {
-                    ourNavBar.style.backgroundColor = "lightorange";
-                } else {
-                    ourNavBar.style.backgroundColor = "lightblue";
-                }
+				var ourNavBar = document.querySelector('.navBar');
+				if (ourNavBar.style.backgroundColor === "lightblue") {
+					ourNavBar.style.backgroundColor = "lightorange";
+				} else {
+					ourNavBar.style.backgroundColor = "lightblue";
+				}
 		</script>
 	</body>
 </html>
