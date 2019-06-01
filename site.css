@@ -100,7 +100,7 @@ img {
 .fixed-height-2 {height: 16px;}
 .browser-height {height: 90vh;}
 
-.unselectedBack{background-color: #9b9fa5;}
+.inactiveBack{background-color: #9b9fa5;}
 .activeBack{background-color: lightblue;}
 
 /*actually a light grey*/.redBack{background-color: #dadfe8;}
