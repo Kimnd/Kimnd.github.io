@@ -8,6 +8,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+nav {
+    /*background-color: thistle;*/
+    display: grid;
+    /*grid-template-rows: 1fr;*/
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    /*justify-content: right;*/
+}
+.nav-item:hover{
+    background-color: dodgerblue;
+    color: linen;
+    /*border-color: chartreuse;*/
+    padding: 5px;
+    text-align: center;
+    text-emphasis-color: gold;
+}
 .centered {
     align-content: center;
     margin-left: auto;
