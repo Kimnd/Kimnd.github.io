@@ -25,6 +25,7 @@ nav {
     text-align: center;
     text-emphasis-color: gold;
 }
+/*
 .centered {
     align-content: center;
     margin-left: auto;
@@ -32,6 +33,7 @@ nav {
     text-align: center;
     padding: 5px;
 }
+*/
 /*background:
     linear-gradient(to left,
     purple, orange,
@@ -120,11 +122,11 @@ nav {
 .inactiveBack{background-color: #9b9fa5;}
 .activeBack{background-color: lightblue;}
 
-/*actually a light grey*/.redBack{background-color: #dadfe8;}
+.redBack{background-color: #dadfe8;}
 .orangeBack{background-color: orange;}
-/*actually a grey*/.yellowBack{background-color: #9b9fa5;}
+.yellowBack{background-color: #9b9fa5;}
 .greenBack{background-color: lightgreen;}
-/*actually a dark grey*/.blueBack{background-color: #67696d;}
+.blueBack{background-color: #67696d;}
 .purpleBack{background-color: lavender;}
 .blackTxt {color: black;}
 .whiteTxt {color: white;}
