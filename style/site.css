@@ -1,35 +1,55 @@
 /*root {display: block;}*/
 html {scroll-behavior: smooth;}
 body {
-    background-color: #9e9e9e;
-    font-size: 1.5rem;
+  background-color: #9e9e9e;
+  font-size: 1.5rem;
 }
 nav {
-    /*background-color: thistle;*/
-    display: grid;
-    /*grid-template-rows: 1fr;*/
-    grid-column-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 5px;
-    justify-content: center;
-    text-align: center;
+  /*background-color: thistle;*/
+  display: grid;
+  /*grid-template-rows: 1fr;*/
+  grid-column-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
 }
 nav > a:hover {
-    background-color: dodgerblue;    
-    /*padding: 5px;*/
+  background-color: dodgerblue;
+  /*padding: 5px;*/
 }
-h6 {height: 300px;}
-#aboutMe{height: 300px; background-color: orange;}
+/*h6 {height: 300px;}*/
+content > #aboutMe {
+  background: linear-gradient(45deg,
+    gold 25%,
+
+    snow 25%,
+    snow 50%,
+    
+    MediumOrchid 50%,
+    MediumOrchid 75%,
+    
+    DimGrey 75%);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aboutMe{
+/*  background-color: orange;*/
+}
 #hireMe{height: 400px; background-color: red;}
 #contactMe{height: 400px; background-color: indigo;}
 
 /*.nav-item:hover{
-    background-color: dodgerblue;
-    color: linen;
-    border-color: chartreuse;
-    padding: 5px;
-    text-align: center;
-    text-emphasis-color: gold;
+  background-color: dodgerblue;
+  color: linen;
+  border-color: chartreuse;
+  padding: 5px;
+  text-align: center;
+  text-emphasis-color: gold;
 }*/
 img {
   display: block;
@@ -38,92 +58,92 @@ img {
 }
 /*
 .centered {
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 5px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
 }
 */
 /*background:
-    linear-gradient(to left,
-    purple, orange,
-    royalblue, yellow,
-    red, green);
+  linear-gradient(to left,
+  purple, orange,
+  royalblue, yellow,
+  red, green);
 */
 /*.pageBox {
-    padding: 10px;
-    width: 75%;
-    margin: auto;
+  padding: 10px;
+  width: 75%;
+  margin: auto;
 }
 */
 /*.fifBox{
-    background-color: lightsteelblue;
-    margin: auto;
-    padding: 10px;
-    font-size: large;
-    width: 85%;
+  background-color: lightsteelblue;
+  margin: auto;
+  padding: 10px;
+  font-size: large;
+  width: 85%;
 }
 .fifBack{
-    background: linear-gradient(to right,
-        #dadfe8 20%, #9b9fa5 40%,
-        royalblue, #67696d 90%,
-        firebrick);
+  background: linear-gradient(to right,
+    #dadfe8 20%, #9b9fa5 40%,
+    royalblue, #67696d 90%,
+    firebrick);
 }
 
 .bullyBack {
-    background: linear-gradient(to right,
-        #213F70 25%, #EFAA28 25%,
-        #EFAA28 50%, #A69456 50%,
-        #A69456 75%, #7B6E41 75%);
+  background: linear-gradient(to right,
+    #213F70 25%, #EFAA28 25%,
+    #EFAA28 50%, #A69456 50%,
+    #A69456 75%, #7B6E41 75%);
 }
 .bullyBox{
-    background: linear-gradient(to right,
-        #EFAA28, #A69456);
-    margin: auto;
-    padding: 10px;
-    font-size: large;
+  background: linear-gradient(to right,
+    #EFAA28, #A69456);
+  margin: auto;
+  padding: 10px;
+  font-size: large;
 }.peteBox{
-    background: #800047;
-    color: ghostwhite;
-    margin: auto;
-    padding: 10px;
-    font-size: large;    
+  background: #800047;
+  color: ghostwhite;
+  margin: auto;
+  padding: 10px;
+  font-size: large;    
 }.garyBox{
-    margin: auto;
-    padding: 10px;
-    color: forestgreen;
-    font-size:large;
+  margin: auto;
+  padding: 10px;
+  color: forestgreen;
+  font-size:large;
 }.jimmyBox{
-    font-family: 'Comic Sans';
-    padding: 10px;
-    margin:auto;
+  font-family: 'Comic Sans';
+  padding: 10px;
+  margin:auto;
 }
 
 
 .harshBack {
-    background: linear-gradient(to right,
-        black 90%, #33FF00 90%);
+  background: linear-gradient(to right,
+    black 90%, #33FF00 90%);
 }
 .mannieBox {
-    background-color: black;
-    color: #33FF00;
-    font-family: monospace;
-    margin: auto;
-    padding: 10px;
+  background-color: black;
+  color: #33FF00;
+  font-family: monospace;
+  margin: auto;
+  padding: 10px;
 }
 
 .giverBack {
-    background: linear-gradient(to right,
-        red, orangered, orange, yellow,
-        yellowgreen, limegreen, turquoise,
-        royalblue, blueviolet, purple);
+  background: linear-gradient(to right,
+    red, orangered, orange, yellow,
+    yellowgreen, limegreen, turquoise,
+    royalblue, blueviolet, purple);
 }.giverBox {
-    background: linear-gradient(to right,
-        grey 95%,
-        red);
-    margin: auto;
-    padding: 10px;
+  background: linear-gradient(to right,
+    grey 95%,
+    red);
+  margin: auto;
+  padding: 10px;
 }
 
 .fixed-height {height: 350px;}
@@ -144,6 +164,6 @@ img {
 
 
 .hide-me {
-    display: none;
-    border-color: magenta;
+  display: none;
+  border-color: magenta;
 }*/
