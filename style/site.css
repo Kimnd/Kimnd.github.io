@@ -1,13 +1,42 @@
-root {display: block;}
+/*root {display: block;}*/
+html {scroll-behavior: smooth;}
 body {
     background-color: #9e9e9e;
     font-size: 1.5rem;
 }
+nav {
+    /*background-color: thistle;*/
+    display: grid;
+    /*grid-template-rows: 1fr;*/
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+}
+nav > a:hover {
+    background-color: dodgerblue;    
+    /*padding: 5px;*/
+}
+h6 {height: 300px;}
+#aboutMe{/*height: 300px; background-color: orange;*/}
+#hireMe{/*height: 400px background-color: red;*/}
+#contactMe{/*height: 400px background-color: indigo;*/}
+
+/*.nav-item:hover{
+    background-color: dodgerblue;
+    color: linen;
+    border-color: chartreuse;
+    padding: 5px;
+    text-align: center;
+    text-emphasis-color: gold;
+}*/
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+/*
 .centered {
     align-content: center;
     margin-left: auto;
@@ -15,19 +44,20 @@ img {
     text-align: center;
     padding: 5px;
 }
+*/
 /*background:
     linear-gradient(to left,
     purple, orange,
     royalblue, yellow,
     red, green);
 */
-.pageBox {
+/*.pageBox {
     padding: 10px;
     width: 75%;
     margin: auto;
 }
-
-.fifBox{
+*/
+/*.fifBox{
     background-color: lightsteelblue;
     margin: auto;
     padding: 10px;
@@ -103,11 +133,11 @@ img {
 .inactiveBack{background-color: #9b9fa5;}
 .activeBack{background-color: lightblue;}
 
-/*actually a light grey*/.redBack{background-color: #dadfe8;}
+.redBack{background-color: #dadfe8;}
 .orangeBack{background-color: orange;}
-/*actually a grey*/.yellowBack{background-color: #9b9fa5;}
+.yellowBack{background-color: #9b9fa5;}
 .greenBack{background-color: lightgreen;}
-/*actually a dark grey*/.blueBack{background-color: #67696d;}
+.blueBack{background-color: #67696d;}
 .purpleBack{background-color: lavender;}
 .blackTxt {color: black;}
 .whiteTxt {color: white;}
@@ -116,4 +146,4 @@ img {
 .hide-me {
     display: none;
     border-color: magenta;
-}
+}*/
