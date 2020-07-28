@@ -19,9 +19,9 @@ nav > a:hover {
     /*padding: 5px;*/
 }
 h6 {height: 300px;}
-#aboutMe{/*height: 300px; background-color: orange;*/}
-#hireMe{/*height: 400px background-color: red;*/}
-#contactMe{/*height: 400px background-color: indigo;*/}
+#aboutMe{height: 300px; background-color: orange;}
+#hireMe{height: 400px; background-color: red;}
+#contactMe{height: 400px; background-color: indigo;}
 
 /*.nav-item:hover{
     background-color: dodgerblue;
