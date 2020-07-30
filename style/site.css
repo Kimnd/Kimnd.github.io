@@ -1,5 +1,13 @@
 /*root {display: block;}*/
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
+.backgroundSet {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 body {
   display: grid;
   background: repeating-linear-gradient(
@@ -9,12 +17,6 @@ body {
     silver 15px,
     silver 30px
   );
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*font-size: 1.5rem;*/
 }
 a {
   text-decoration: none;
@@ -38,7 +40,10 @@ nav > a:hover {
   /*padding: inherit;*/
 }
 /*h6 {height: 300px;}*/
-content > #aboutMe {
+/*content > #aboutMe {
+}
+*/
+#aboutMe{
   background: repeating-linear-gradient(
     45deg,
     gold,
@@ -46,15 +51,10 @@ content > #aboutMe {
     yellow 15px,
     yellow 30px
   );
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#aboutMe{
-/*  background-color: orange;*/
 }
 #hireMe{height: 400px;
   background-color: red;
@@ -69,7 +69,6 @@ content > #aboutMe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 #contactMe{height: 400px; background-color: indigo;
 background: repeating-linear-gradient(
@@ -83,7 +82,6 @@ background: repeating-linear-gradient(
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 img {
