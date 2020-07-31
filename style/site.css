@@ -14,6 +14,11 @@ grey (jet)--#373737
 */
 
 :root {
+  --icterine: color(#fff77b);
+  --purpureus: color(#945da1);
+  --light-yellow: color(#ffffdb);
+  --oxford-blue: color(#000026);
+  --jet: color(#373737);
   --about-me-bg: repeating-linear-gradient(45deg,
     #fff77b, #fff77b 15px,
     gold 15px, gold 30px);
@@ -55,13 +60,15 @@ nav {
 nav > a {
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: dodgerblue;
   opacity: 0.5;
 }
 nav > a:hover {
   opacity: 1.0;
+  background-color: #000026; /*oxford blue*/
+  color: snow;
 }
 h6 {
+  margin: 10px;
   font-size: 120%;
   text-align: center;
   padding-top: 10px;
