@@ -34,13 +34,6 @@ html {
   display: grid;
   scroll-behavior: smooth;
 }
-/*.parallaxSet {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
 body {
   background-color: #ffffdb;
   font-size: 100%;
@@ -67,7 +60,6 @@ nav > a {
 }
 nav > a:hover {
   opacity: 1.0;
-  /*padding: inherit;*/
 }
 h6 {
   font-size: 120%;
@@ -77,29 +69,26 @@ h6 {
   border-radius: 16px;
   background-attachment: fixed;
 }
-/*content > #aboutMe {
-}
-*/
 #aboutMe{
   background: var(--about-me-bg);
   background-attachment: fixed;
 }
 .hireMe{
   display: grid;
-  grid-template-rows: 1fr auto auto;
+/*  grid-template-rows: 1fr auto auto;
   grid-template-columns: auto auto auto;
-  /*grid-template-areas: 1 / 1 / 3 / 3;*/
+*/  /*grid-template-areas: 1 / 1 / 3 / 3;*/
 }
 #hireMe{
   background: var(--hire-me-bg);
   background-attachment: fixed;
   color: snow;
-  grid-area: 1 / 1 / 3 / 1;
+  /*grid-area: 1 / 1 / 3 / 1;*/
 }
 #contactMe{
   background: var(--contact-me-bg);
   background-attachment: fixed;
- color: snow;
+  color: snow;
 }
 
 img {
