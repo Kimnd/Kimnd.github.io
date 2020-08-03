@@ -42,18 +42,13 @@ html {
 body {
   background-color: #ffffdb;
   font-size: 100%;
-
 }
-a {
-  text-decoration: none;
-  color: black;
-}
+a {text-decoration: none; color: black;}
 nav {
-  /*background-color: thistle;*/
   display: grid;
   grid-template-rows: 1fr;
-  grid-column-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
   text-align: center;
   color: black;
 }
@@ -65,37 +60,49 @@ nav > a {
 nav > a:hover {
   opacity: 1.0;
   background-color: #000026; /*oxford blue*/
-  color: snow;
+  color: snow; /*so the text is readable*/
 }
 h6 {
-  margin: 10px;
+  margin: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 120%;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 16px;
+  border-radius: 8px;
   background-attachment: fixed;
 }
-#aboutMe{
+#aboutMe {
   background: var(--about-me-bg);
   background-attachment: fixed;
 }
-.hireMe{
+.hireMe {
   display: grid;
-/*  grid-template-rows: 1fr auto auto;
-  grid-template-columns: auto auto auto;
-*/  /*grid-template-areas: 1 / 1 / 3 / 3;*/
+  grid-template-areas:
+  'header header header'
+  ' left  middle right ';
+  grid-column-gap: 3%;
 }
-#hireMe{
+/*.hireMe > div {grid-column-gap: 5%;}*/
+#hireMe {
   background: var(--hire-me-bg);
   background-attachment: fixed;
   color: snow;
-  /*grid-area: 1 / 1 / 3 / 1;*/
+  grid-area: header;
 }
-#contactMe{
+#educationHire {grid-area: left;}
+#softwareHire {grid-area: middle;}
+#generalHire {grid-area: right;}
+
+.contactMe {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+#contactMe {
   background: var(--contact-me-bg);
   background-attachment: fixed;
   color: snow;
+  grid-area: 1 / 1 / 2 / 6;
 }
 
 img {
