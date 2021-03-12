@@ -5,25 +5,50 @@
     <link rel="stylesheet" type="text/css" href="style/site.css">
     <meta charset="utf-8">
     <title>Kojima's Names</title>
-		<script>
+<!--
+    <script>
 			function oninput(event) {
 	  		document.getElementById("fullname") = x.value;
 			}
+      function displayName() {
+        document.getElementById("displayFullName") = "this is a"
+      }
 		</script>
-
+-->
   </head>
 	<body>
-		<h6>TEST</h6>
-			<script language="javascript"> 
-     		function displayName() {
-     			document.getElementById("displayFullName") = 
-     		}
-     	</script>
-      <input type="text" id="fullname"><br>
-     	<input type="button">Show your name!<br>
+	  <h6>TEST</h6>
+	  	<label for="fullname">What's your full name?</label>
+      <input type="text"
+      			 id="fullname"
+      			 name="fullname"><br>
+     	<button id="submit"
+     				  type="button"
+     				  onclick="displayName()">Show a name!</button>
+     	<button id="submit"
+     					type="button"
+     					onclick="assignName()">Show YOUR name?</button>
+     	<output style="background-color: orange" id="displayFullName" ></output>
+     	<p id="displayFullName"></p>
 
-     	<p></p>
-
+    <script>
+      /*
+      document.getElementById("displayFullName").innerHTML = "brian david gilbert";
+      */
+      /*function oninput(event) {
+        document.getElementById("fullname") = x.value;
+      }*/
+      var fullname = "brian david gilbert";
+      function displayName() {
+        document.getElementById("displayFullName").innerHTML = fullname;
+        console.log("in displayName!");
+      }
+      function assignName() {
+      	fullname = document.getElementById("fullname").innerHTML;
+      	console.log("var fullname is: " + fullname + "\n");
+      }
+      
+    </script>
 
   </body>
 </html>
