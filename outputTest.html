@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <!--This is the page where a test version of an adaptation of Brian David Gilbert's Kojima Name Generator will go.-->
-    <link rel="stylesheet" type="text/css" href="style/site.css">
+    <!--This is the page where a test version of an adaptation of Brian David Gilbert's Kojima Name Generator will go.-->
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/site.css">
+    <script type="text/javascript" src="js/kojimaJavascript.js"></script>
     <title>Kojima's Names</title>
 <!--
     <script>
-			function oninput(event) {
-	  		document.getElementById("fullname") = x.value;
-			}
+      function oninput(event) {
+        document.getElementById("fullname") = x.value;
+      }
       function displayName() {
         document.getElementById("displayFullName") = "this is a"
       }
-		</script>
+    </script>
 -->
   </head>
-	<body>
-	  <h6>TEST</h6>
-	  	<label for="fullname">What's your full name?</label>
-      <input type="text"
-      			 id="fullname"
-      			 name="fullname"><br>
-     	<button id="submit"
-     				  type="button"
-     				  onclick="displayName()">Show a name!</button>
-     	<button id="submit"
-     					type="button"
-     					onclick="assignName()">Show YOUR name?</button>
-     	<output style="background-color: orange" id="displayFullName" ></output>
-     	<p id="displayFullName"></p>
-
-    <script>
-      /*
-      document.getElementById("displayFullName").innerHTML = "brian david gilbert";
-      */
-      /*function oninput(event) {
-        document.getElementById("fullname") = x.value;
-      }*/
-      var fullname = "brian david gilbert";
-      function displayName() {
-        document.getElementById("displayFullName").innerHTML = fullname;
-        console.log("in displayName!");
-      }
-      function assignName() {
-      	fullname = document.getElementById("fullname").innerHTML;
-      	console.log("var fullname is: " + fullname + "\n");
-      }
-      
-    </script>
-
+  <body>
+    <h6>TEST</h6>
+    <label for="fullname">What's your full name?</label>
+    <input type="text"
+           id="fullname"
+           name="fullname"><br>
+    <button id="submit"
+            type="button"
+            onclick="displayName()">Show a name!</button>
+    <button id="submit"
+            type="button"
+            onclick="assignName()">Show YOUR name?</button>
+    <output style="background-color: orange" id="displayFullName" ></output>
+    <p id="displayFullName"></p>
   </body>
 </html>
