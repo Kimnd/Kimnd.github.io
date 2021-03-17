@@ -7,6 +7,11 @@
     <title>Kojima's Names</title>
   </head>
   <body>
+
+
+
+
+
     <h6>KOJIMA NAME GENERATOR</h6>
 
     <section id="numOfNames">
@@ -27,48 +32,53 @@
       <header>Section 2: Personal Information</header>
       <div id="greyBox">Kojima’scharactershavenamesthataredirectlyrelatedtotheirown character traits. This information will make sure your name fits your personality.</div>
 
-      <ol>
-        <li><label>What is your full name?</label></li>
-          <input type="text" id="fullname"><br>
-        <li><label>What do you do at your occupation?</label></li>
-          <input type="text" id=""><br>
-          <ul>
-            <li><label>2a. Condense the verb in your answer into a single -er noun. (e.g. if you are a sheep farmer, your answer will be “farmer”)</label></li>
-          </ul>
-          <input type="text" id=""><br>
-        <li><label>What was your first pet’s specific species/breed? If you never had a pet, please answer with an animal you wish you owned.</label></li>
-          <input type="text" id=""><br>
-        <li><label>What’s your most embarrassing childhood memory? Be specific.</label></li>
-          <textarea type="text" id=""></textarea>
-          <ul>
-            <li><label>4a. Condense this story into two words.</label></li>
-          </ul>
-            <input type="text" id=""><br>
-        <li><label>What is the object you’d least like to be stabbed by?</label></li>
-          <input type="text" id=""><br> 
-        <li><label>What is something you are good at? (Verb ending in -ing)</label></li>
-          <input type="text" id=""><br> 
-        <li><label>How many carrots do you believe you could eat in one sitting, if someone, like, forced you to eat as many carrots as possible?</label></li>
-          <input type="text" id=""><br>
-        <li><label>What is your greatest intangible fear? (e.g. death, loneliness, fear itself)</label></li>
-          <input type="text" id=""><br>
-        <li><label>What is your greatest tangible fear? (e.g. horses)</label></li>
-          <input type="text" id=""><br>
-        <li><label>What is the last thing you did before starting this worksheet?</label></li>
-          <input type="text" id=""><br>
-        <li><label>What condition is your body currently in? (single word answer)</label></li>
-          <input type="text" id=""><br>
-        <li><label>Favorite state of matter?</label></li>
-          <input type="text" id=""><br>
-        <li><label>A word your name kind of sounds like? (e.g. Brian -> Brain)</label></li>
-          <input type="text" id=""><br> 
-        <li><label>What is your Zodiac sign?</label></li>
-          <input type="text" id=""><br>
-        <li><label>If you had to define your personality in one word, what would it be?</label></li>
-          <input type="text" id=""><br>
-      </ol>
+      <form>
+	      <ol>
+	        <li><label for="fullname">What is your full name?</label></li>
+	          <input type="text" id="fullname"><br>
+	<!--
+	        <li><label>What do you do at your occupation?</label></li>
+	          <input type="text" id=""><br>
+	          <ul>
+	            <li><label>2a. Condense the verb in your answer into a single -er noun. (e.g. if you are a sheep farmer, your answer will be “farmer”)</label></li>
+	          </ul>
+	          <input type="text" id=""><br>
+	        <li><label>What was your first pet’s specific species/breed? If you never had a pet, please answer with an animal you wish you owned.</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>What’s your most embarrassing childhood memory? Be specific.</label></li>
+	          <textarea type="text" id=""></textarea>
+	          <ul>
+	            <li><label>4a. Condense this story into two words.</label></li>
+	          </ul>
+	            <input type="text" id=""><br>
+	        <li><label>What is the object you’d least like to be stabbed by?</label></li>
+	          <input type="text" id=""><br> 
+	        <li><label>What is something you are good at? (Verb ending in -ing)</label></li>
+	          <input type="text" id=""><br> 
+	        <li><label>How many carrots do you believe you could eat in one sitting, if someone, like, forced you to eat as many carrots as possible?</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>What is your greatest intangible fear? (e.g. death, loneliness, fear itself)</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>What is your greatest tangible fear? (e.g. horses)</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>What is the last thing you did before starting this worksheet?</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>What condition is your body currently in? (single word answer)</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>Favorite state of matter?</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>A word your name kind of sounds like? (e.g. Brian -> Brain)</label></li>
+	          <input type="text" id=""><br> 
+	        <li><label>What is your Zodiac sign?</label></li>
+	          <input type="text" id=""><br>
+	        <li><label>If you had to define your personality in one word, what would it be?</label></li>
+	          <input type="text" id=""><br>
+	-->
+      	</ol>
+  		</form>
     </section>
 
+<!--
     <section id="kojimaInfo">
       <header> Section 3: Kojima Information</header>
       <div id="greyBox">Kojima character names reflect his own idiosyncrasies. He can’t help himself.</div>
@@ -122,6 +132,7 @@
           </ul>
         </ol>
       </section>
+-->
 
       <section id="nameType">
         <header>Section 5: Determining Your Name Category</header>
@@ -129,13 +140,15 @@
 
         <label>5.Roll a d20. Use this table to determine your name category. Once you have figured out your name category, you can skip ahead to the section that outlines the rules of your name:</label>
         <ul>
-          <li>1 You have a NORMAL NAME (See Section 6)</li>
+          <li>1-20 You have a NORMAL NAME (See Section 6)</li>
+<!--
           <li>2-6 You have an OCCUPATIONAL NAME (See Section 7)</li>
           <li>7-10 You have a HORNY NAME (See Section 8)</li>
           <li>11-13 You have a THE NAME (See Section 9)</li>
           <li>14-17 You have a COOL NAME (See Section 10)</li>
           <li>18-19 You have a VIOLENT NAME (See Section 11)</li>
           <li>20 You have a NAME THAT LACKS SUBTEXT (See Section 12)</li>
+-->
         </ul>
       </section>
       <section id="normName">
@@ -145,11 +158,14 @@
         <ol>
           <li><label>Please rewrite your answer from Section 2, Number 1 here. This is your full Kojima name:</label></li>
             <output name="normName"></output>
+<!--
           <li>Add any conditions you accrued in Section 4.</li>
+-->
           <li>That’s your name. Your Kojima name is probably just your actual name. Sorry if you were expecting something wild. Skip to Section 13.</li>
         </ol>
       </section>
 
+<!--
       <section id="occupationName">
         <header>Section 7: OCCUPATIONAL NAME</header>
         <div id="greyBox"> Kojima’s characters tend to be driven by the work that they do. That often carries over to their names. You, too, can be nothing more than your job.</div>
@@ -257,6 +273,7 @@
         </ol>
       </section>
       </section>
+-->
 
       <section id="explainname">
         <header>Section 13: Explaining Your Name</header>
