@@ -19,17 +19,33 @@
   </head>
   <body>
     <h6>TEST</h6>
-    <label for="fullname">What's your full name?</label>
-    <input type="text"
-           id="fullname"
-           name="fullname"><br>
-    <button id="submit"
-            type="button"
-            onclick="displayName()">Show a name!</button>
-    <button id="submit"
-            type="button"
-            onclick="assignName()">Show YOUR name?</button>
-    <output style="background-color: orange" id="displayFullName" ></output>
-    <p id="displayFullName"></p>
+
+    <section>
+      <label for="fullname">What's your full name?</label>
+      <input type="text"
+             id="fullname"
+             name="fullname"
+             onblur="assignName()"
+             ><br>
+      <button id="submit"
+              type="button"
+              onclick="displayName()">Show a name!</button>
+  <!--
+      <button id="submit"
+              type="button"
+              onclick="assignName()">Show YOUR name?</button>
+  -->
+      <output style="background-color: orange" id="displayFullName" ></output>
+    </section>
+    <section>
+      <button id="submit"
+              type="button"
+              onclick="rollD()">Roll a d6!</button>
+      <button id="submit"
+              type="button"
+              onclick="rollD(20)">Roll a d20!</button>
+      <output style="background-color: LimeGreen" id="diceRollTray">          </output>
+
+    </section>
   </body>
 </html>
