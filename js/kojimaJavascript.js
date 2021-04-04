@@ -1,5 +1,6 @@
 //Javascript code for the Kojima Name Generator!
-//
+//TODO: make name class
+//	   -how to transfer variable & display it elsewhere
 var fullname = "brian david gilbert";
 function displayName() {
   document.getElementById("displayFullName").innerHTML = fullname;
