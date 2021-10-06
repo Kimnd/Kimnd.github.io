@@ -6,27 +6,27 @@ been loaded. It then creates a simple 'hello world' message in a <p>
 tag and adds the tag to an element with the id of "target".*/
 
 document.addEventListener('DOMContentLoaded', function() {
-  var paragraphnode = document.createElement('p');
-  var helloworldnode = document.createTextNode("sup world");
 //////////////////////////////////////////////
+  var navnode = document.createElement('nav');
+  var homeanchornode = document.createElement('a'); 
+  var homelinktext = document.createTextNode("Home");
+  homeanchornode.appendChild(homelinktext);
+  navnode.appendChild(homeanchornode);
 
-  var a = document.createElement('a'); 
-  var link = document.createTextNode("Click this link!");
-  a.appendChild(link);
+//  anchornode1.title = "clickableLink";
+  homeanchornode.href = "https://kimnd.github.io/";
+//  homeanchornode.id = "target";
 
-  a.title = "clickableLink";
-    
-  a.href = "https://www.geeksforgeeks.org";
-  a.id = "target";
+//  document.navnode.appendChild(homeanchornode); //NOTE: doesn't work because 'navenode' isn't recognized--'nav' is also not recognized. gotta go by element type :)
 
-  document.body.appendChild(a);
+//  document.body.appendChild(homeanchornode); //puts the "home" link button in the body tag
+
+  document.body.appendChild(navnode);
+
 ////////////////////////////////////////////
-//  paragraphnode.textcontent = ;
-  paragraphnode.appendChild(helloworldnode);
-//  document.body.appendChild(paragraphnode);
-  document.getElementById("target").appendChild(paragraphnode);
+  // document.getElementById("target").appendChild(paragraphnode);
 
-  console.log("you said: " + paragraphnode.textcontent + ".");
+  // console.log("you said: " + paragraphnode.textcontent + ".");
 });
 
 /*
