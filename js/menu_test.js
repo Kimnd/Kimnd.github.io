@@ -1,6 +1,12 @@
-//A file to test making a menu in Javascript instead of copy-
-// pasting each time
-
+/*///////////////////////////////////////////////////////////////////
+A file to test making a menu in Javascript instead of copy-
+pasting each time.
+Sources used:
+- How to construct an anchor element in javascript instead of by hand
+--- https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/
+- How to get an element by tag type instead of just by id
+--- https://www.tutsmake.com/javascript-get-element-by-id-name-class-tag-value/
+///////////////////////////////////////////////////////////////////*/
 /*This event listener fires when the structure of the HTML page has
 been loaded. It then creates a simple 'hello world' message in a <p>
 tag and adds the tag to an element with the id of "target".*/
@@ -35,8 +41,9 @@ document.addEventListner('DOMContentLoaded', function() {
   var anchornode1 = document.createElement('a');
   var anchornode2 = document.createElement('a');
   var anchornode3 = document.createElement('a');
-*/
-/*
+
+///Source for this code (wording changed a bit for my own purposes):
+///https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/
 // Create anchor element.
   var a = document.createElement('a'); 
 
