@@ -6,6 +6,8 @@ Sources used:
 --- https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/
 - How to get an element by tag type instead of just by id
 --- https://www.tutsmake.com/javascript-get-element-by-id-name-class-tag-value/
+- Ok so i just realized that getElementsByTagName isn't the same as getElementById (since it returns a NodeList you can just do the first element)
+--- https://stackoverflow.com/a/8407540
 ///////////////////////////////////////////////////////////////////*/
 /*This event listener fires when the structure of the HTML page has
 been loaded. It then creates a simple 'hello world' message in a <p>
@@ -14,20 +16,29 @@ tag and adds the tag to an element with the id of "target".*/
 document.addEventListener('DOMContentLoaded', function() {
 //////////////////////////////////////////////
   var navnode = document.createElement('nav');
-  var homeanchornode = document.createElement('a'); 
-  var homelinktext = document.createTextNode("Home");
-  homeanchornode.appendChild(homelinktext);
-  navnode.appendChild(homeanchornode);
+  var homenode = document.createElement('a'); 
+  var hometext = document.createTextNode("Home");
+  
+  homenode.appendChild(hometext);
+  navnode.appendChild(homenode);
+  homenode.href = "https://kimnd.github.io/";
+  //homenode.contentEditable = true;
+  var articleElements = document.getElementsByTagName('article');
+
+//  document.articleElements[0].appendChild(navnode);
+  document.getElementById("menu").appendChild(navnode);
+
+  //document.body.appendChild(navnode);
+
+
 
 //  anchornode1.title = "clickableLink";
-  homeanchornode.href = "https://kimnd.github.io/";
 //  homeanchornode.id = "target";
 
 //  document.navnode.appendChild(homeanchornode); //NOTE: doesn't work because 'navenode' isn't recognized--'nav' is also not recognized. gotta go by element type :)
 
 //  document.body.appendChild(homeanchornode); //puts the "home" link button in the body tag
 
-  document.body.appendChild(navnode);
 
 ////////////////////////////////////////////
   // document.getElementById("target").appendChild(paragraphnode);
