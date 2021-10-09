@@ -16,12 +16,27 @@ tag and adds the tag to an element with the id of "target".*/
 document.addEventListener('DOMContentLoaded', function() {
 //////////////////////////////////////////////
   var navnode = document.createElement('nav');
-  var homenode = document.createElement('a'); 
-  var hometext = document.createTextNode("Home");
-  
-  homenode.appendChild(hometext);
-  navnode.appendChild(homenode);
+  var homenode = document.createElement('a');
+  var aboutnode = document.createElement('a');
+  var blognode = document.createElement('a');
+  var faqnode = document.createElement('a');
+
   homenode.href = "https://kimnd.github.io/";
+  aboutnode.href = "https://kimnd.github.io/#aboutMe";
+  blognode.href = "https://kimnd.github.io/writing.html";
+  faqnode.href = "https://kimnd.github.io/faq.html";
+
+  var hometext = document.createTextNode("Home");
+  var abouttext = document.createTextNode("About");
+  var blogtext = document.createTextNode("Blog");
+  var faqtext = document.createElement("FAQ");
+
+  homenode.appendChild(hometext);
+  aboutnode.appendChild(abouttext);
+  blognode.appendChild(blogtext);
+  faqnode.appendChild(faqtext);
+
+  navnode.appendChild(homenode);
   //homenode.contentEditable = true;
   var articleElements = document.getElementsByTagName('article');
 
