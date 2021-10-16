@@ -15,7 +15,7 @@ tag and adds the tag to an element with the id of "target".*/
 
 document.addEventListener('DOMContentLoaded', function() {
 //////////////////////////////////////////////
-  var navnode = document.createElement('nav');
+  var navnode = document.createElement('div');
   var homenode = document.createElement('a');
   var aboutnode = document.createElement('a');
   var blognode = document.createElement('a');
@@ -29,19 +29,26 @@ document.addEventListener('DOMContentLoaded', function() {
   var hometext = document.createTextNode("Home");
   var abouttext = document.createTextNode("About");
   var blogtext = document.createTextNode("Blog");
-  var faqtext = document.createElement("FAQ");
+  var faqtext = document.createTextNode("FAQ");
 
   homenode.appendChild(hometext);
   aboutnode.appendChild(abouttext);
   blognode.appendChild(blogtext);
   faqnode.appendChild(faqtext);
 
-  navnode.appendChild(homenode);
+//navnode.appendChild(homenode);
+//navnode.appendChild(aboutnode);
+//navnode.appendChild(blognode);
+//navnode.appendChild(faqnode);
   //homenode.contentEditable = true;
   var articleElements = document.getElementsByTagName('article');
 
 //  document.articleElements[0].appendChild(navnode);
-  document.getElementById("menu").appendChild(navnode);
+  document.getElementById("menu").appendChild(homenode);
+  document.getElementById("menu").appendChild(aboutnode);
+  document.getElementById("menu").appendChild(blognode);
+  document.getElementById("menu").appendChild(faqnode);
+//document.getElementById("menu").appendChild(navnode);
 
   //document.body.appendChild(navnode);
 
