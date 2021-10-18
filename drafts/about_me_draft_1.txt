@@ -1,0 +1,14 @@
+Welcome to the webpage of Frankie Gallagher!
+
+Basic Info
+-name, location, field of study
+
+Relevant Experience
+-Computer science stuff
+I've completed many coding projects in my CS classes over the years. Most of them were not focused on UI, but rather on making scalabale, readable code. Making code that runs quickly is all well and good, but I've always been more interested in code that's easy to understand and slots easily into other situations. I think the best example of this is a project I no longer have saved anywhere. I need to give the computer people at the thing a call and see if they can recover my old computer...
+-Writing Stuff
+A large portion of my free time over the years has been spent writing stories. A small portion of them are acceptable to read in a professional environment, which I've put up for view here <link to 'writings' page>. While this type of writing--i.e. fictional and utilizing intellectual property that isn't my own--is not what I expect to be doing for a career, this passtime has made me an exceptionally detail-cognizant editor and writer. Whether I'm cognizant to the correct details isn't always assured, but the time I've spent trying to get a story that existed into my head into words that somebody else could read has undoubtedly made my skills as a writer far sharper than they ever would've been.
+-Education Stuff
+-Work Stuff
+
+Summary
