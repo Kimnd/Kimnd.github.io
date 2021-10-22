@@ -1,0 +1,14 @@
+
+Couponing Website
+
+While incomplete, this project was the brainchild of three late nights in a row where a copuoner and I got to talking. She'd been considering making a website for couponers based in San Francisco for a long time, and when I mentioned I happened to have a Computer Science degree I wasn't using, wanted to know if I could design a website for her. Ultimately it didn't really pan out, but there were quite a few things that I learned!
+
+Managing client expectations
+
+Before making any sketches, I sat down with my client to ascertain her goals with this project. The two main ones were were to build a community of Bay Area couponers and to provide a resource for people who are just getting into couponing so as to save them money. She also stressed a desire to avoid directly connecting herself to the project for safety reasons. Another value she wanted to instill in the site was that of accessibility and "lack of bullshit".
+All of these were very understandable, but I found that as I dug deeper into what she really wanted, I needed to... manage her expectations a bit. The best example of this was when she discussed building a community with this website. I pointed out that 'building a community' was entirely possible without making a whole website from scratch--that's what software like Facebook and Discord are for. She had tried such things before, and said that Facebook groups became too difficult to manage after a specific size, and that software like Discord isn't suitable for people of older demographics.
+Those were important issues to take into account for the website's design:
+- the demographic should be able to use the site on mobile
+- the site needed to be able to handle many language translations
+- it should be intuitive (or at least understandale) for an older demographic of users, since couponers tend to skew in that direction
+-  
