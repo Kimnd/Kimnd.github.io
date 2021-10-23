@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var faqnode = document.createElement('a');
 
   homenode.href = "https://kimnd.github.io/";
-  aboutnode.href = "https://kimnd.github.io/#aboutMe";
+  aboutnode.href = "https://kimnd.github.io/about.html";
   blognode.href = "https://kimnd.github.io/writing.html";
   faqnode.href = "https://kimnd.github.io/faq.html";
 
