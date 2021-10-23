@@ -1,7 +1,3 @@
-Welcome to the webpage of Frankie Gallagher!
-
-Basic Info
--name, location, field of study
 
 Relevant Experience
 -Computer science stuff
@@ -11,7 +7,7 @@ A large portion of my free time over the years has been spent writing stories. A
 -Education Stuff
 Learning and education have been important to me since quite an early age. I was part of Student Advisors For Education in middle school, an organization dedicated to giving kids with learning disabilities a platform for talking about their experiences. Ever since I've been interested in teaching, education, and learning. I took a few classes on the subject, and while it turns out I'm probably not cut out to teach children, conveying information to others is a useful skill in any field.
 -Work Stuff
-Though I have not yet been employed in the tech sector, I have had a few jobs before--two in retail and one for the United States Post Office. While the concrete things I learned to get these jobs done aren't directly relevant to technology or User Experience, the most important takeaway for me was the fractal nature of the world?
+I have had quite a few jobs outside the tech sector--two in retail and one for the United States Post Office. While the concrete things I learned to get these jobs done aren't directly relevant to technology or User Experience, the most important takeaway for me was the fractal nature of the world?
 ok lemmie explain
 Knowing that any package going to Rico Way is to be sorted into the sixth truck route is only important if you're working at a specific post office. But learning all those facts and forcing myself to get better at my job showed me the importance of the way our world runs. Something as incidental to a daily life as the CVS where you buy Chezits is an intricate logistical balancing act of what products to order, where to display them, who to hire to put those products up, juggling all the schedules of a bunch of employees to make them happy while also keeping the store in the green...
 Harboring a respect for that hard work is important, because, realistically, almost every element of the world as we know it is the product of somebody working hard to get it that way.
