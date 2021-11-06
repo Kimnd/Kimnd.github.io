@@ -43,6 +43,13 @@ grey (jet)--#373737
     DarkSlateGrey 15px, DarkSlateGrey 30px);
 /*  display: block;*/
 }
+body > content {
+  display: grid;
+  /*gap: 10px;*/
+  grid-column-gap: 10px;
+  grid-column-start: 20px;
+  
+}
 
 html {
   display: grid;
@@ -50,7 +57,7 @@ html {
 }
 body {
   background-color: #ffffdb;
-  font-size: 100%;
+  /*font-size: 100%;*/
 }
 a {text-decoration: none; color: black;}
 nav {
