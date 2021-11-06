@@ -1,6 +1,28 @@
 # TODO
-## by 21 oct 2021
-- schedule for bully design thing sent to terry
+## 05 nov 2021 (before 3:30)
+- send message to jeffry about stuff?
+- finish copuon portfolio writeup/outline
+- re-read coupon portfolio stuff
+
+## 04 nov 2021
+- make terry appointments
+- add photo to index
+  - make it appear alongside intro text
+- take and add photos to a folder in the github
+- make new css file/rules for portfolio
+  - how to make it so the num of elements in a nav element determines the number of grid boxes?
+  - how to change layout for width?
+  - make the pictures and the text appear side by side
+
+## 25 oct 2021 (before 5pm)
+- pictures of couponing thing taken
+- couponing analysis written
+
+## 26 Oct 2021
+- computer people by the skate park visited about data recovery
+- sfw fanfics html'd
+- start new css files for stuff
+x schedule for bully design thing sent to terry
 x make html for landing page
 x make html for about page
 - make html for writings page
@@ -13,15 +35,6 @@ x make html for about page
   - karl the fog?
   - dnd stuff???
 - css for writing page 
-
-## 23 oct 2021
-- pictures of couponing thing taken
-- couponing analysis written
-- sfw fanfics html'd
-- start new css files for stuff
-
-## 25 oct 2021 (before 5pm)
-- computer people by the skate park visited about data recovery
 
 ## 27 oct 2021
 - portfolio html'd
