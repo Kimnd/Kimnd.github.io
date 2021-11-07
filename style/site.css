@@ -43,13 +43,19 @@ grey (jet)--#373737
     DarkSlateGrey 15px, DarkSlateGrey 30px);
 /*  display: block;*/
 }
-body > content {
+
+content {
   display: grid;
-  /*gap: 10px;*/
+  grid-template-columns: 40px auto 40px;
+  /*width: 400px;*/
+}
+/*body > content {
+  display: grid;
+  gap: 10px;
   grid-column-gap: 10px;
   grid-column-start: 20px;
-  
-}
+}*/
+
 
 html {
   display: grid;
