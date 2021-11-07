@@ -14,7 +14,14 @@ content {
     "image article article article"
     ;
 }
-h6 {grid-area: title;}
+h6 {
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+}
 img {grid-area: image;}
-article {grid-area: article;}
+article {
+  grid-area: article;
+  padding: 16px;
+  align-self: center;}
 
