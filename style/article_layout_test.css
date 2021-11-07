@@ -1,0 +1,20 @@
+body {
+  display: grid;
+  /*padding: 10px;*/
+}
+
+content {
+  display: inherit;
+  padding-right: 100px;
+  padding-left: 100px;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "title  title   title   title "
+    "image article article article"
+    "image article article article"
+    ;
+}
+h6 {grid-area: title;}
+img {grid-area: image;}
+article {grid-area: article;}
+
