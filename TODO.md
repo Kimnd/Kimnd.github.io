@@ -1,4 +1,22 @@
 # TODO
+## 08 nov 2021
+- sketch the blog layout w/ css grid lines
+- make html and css page for it 
+
+## 07 nov 2021
+x brainstorm 15 blog entries
+x pictures/scans of coupon wireframes
+x send anastasia a text of that family dollar video
+- send liz a text
+
+## 06 nov 2021
+x networking event at 2pm
+
+## this week
+- re-edit the couponing portfolio thing to be 499 words or less
+- wireframe website
+x how to do images in html/css?
+
 ## 05 nov 2021 (before 3:30)
 - send message to jeffry about stuff?
 - finish copuon portfolio writeup/outline
