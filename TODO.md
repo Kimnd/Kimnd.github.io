@@ -1,7 +1,12 @@
 # TODO
+## 09 nov 2021
+- whittle current coupon rant into 500 words
+- make html layout for that entry 
+
 ## 08 nov 2021
-- sketch the blog layout w/ css grid lines
-- make html and css page for it 
+- http://www.technofileonline.com/texts/bkstartmenu97.html
+x sketch the blog layout w/ css grid lines
+x make html and css page for it 
 
 ## 07 nov 2021
 x brainstorm 15 blog entries
