@@ -1,22 +1,31 @@
-entrypreview {
+content {
+  display: grid;
+  padding-right: 100px;
+  padding-left: 100px;
+  /*grid-template-columns: auto auto;*/
+  /*grid-template-areas:*/
+/*    "title  title   title   title "
+    "image article article article"
+    "image article article article"
+    ;
+*/}
+.entry_preview {
+  justify-items: center;
 	display: grid;
 	grid-template-areas:
 	"title title title title"
 	"  .   image image   .  "
-	" text  text  text text"
-	"text  text  text  text"
+	" text  text  text  text"
+	" text  text  text  text"
 	;
 }
-h1 {
+.entry_preview > h1 {
   grid-area: title;
-  align-self: center;
-  justify-self: center;
 }
 img {
   grid-area: image;
 }
 article {
   grid-area: text;
-  padding: 16px;
-  align-self: center;
+  justify-self: left;
 }
