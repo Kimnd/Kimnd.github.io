@@ -11,8 +11,36 @@
       Counting words
     </title>
     <style>
+      content {
+        display: grid;
+        grid-template-areas:
+          "wordcounter textarea textarea"
+          "  infoone   textarea textarea"
+          "  infotwo   textarea textarea"
+        ;
+      }
       div.sticky {
         position: sticky;
+        top: 0;
+      }
+      div.wordcounter {
+        grid-area: wordcounter;
+      }
+      div.infoone {
+        grid-area: infoone;
+      }
+      div.infotwo {
+        grid-area: infotwo;
+      }
+      /*source for the auto-growing text area: https://css-tricks.com/auto-growing-inputs-textareas/*/
+      .textarea {
+        grid-area: textarea;
+        
+        max-width: 75%;
+        /*overflow: hidden;*/
+        resize: horizontal;
+        min-height: 40px;
+        line-height: 20px;
       }
     </style>
 
@@ -21,12 +49,14 @@
   	<nav id="menu"></nav>
     
     <content>
-      <textarea id='input'></textarea>
-      <div class="sticky" style="display: grid;grid-template-columns: auto 200px;">
-        <div>Word count: <span id="count">0</span></div>
-        <div>current char: <span id="character">_</span></div>
-        <div>char's number: <span id="charnum">_</span></div>
+      <div class="sticky">
+        <div class="wordcounter">Word count: <span id="count">0</span></div>
+        <div class="infoone">current char: <span id="character">_</span></div>
+        <div class="infotwo">char's number: <span id="charnum">_</span></div>
       </div>
+      <!-- source for the auto-growing text area: https://css-tricks.com/auto-growing-inputs-textareas/ -->
+      <span id="input" class="textarea" contenteditable></span>
+       <!-- <textarea id='input'></textarea> -->
     </content>
 <!--     <script>
       var input = document.getElementById('input');
