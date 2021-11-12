@@ -1,6 +1,18 @@
 # TODO
+## 11 nov 2021
+x send blog article to jeff
+- list of next 4 chapters from job postings
+(https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?hbid=20256293611104&cid=7647&locvalue=1011)
+(https://www.glassdoor.com/job-listing/olympics-engineering-co-op-intern-ui-ux-graphics-and-animations-intel-JV_IC1147401_KO0,63_KE64,69.htm?jl=1007403677085&pos=102&ao=1136043&s=58&guid=0000017d11f62a20af062e594461b9eb&src=GD_JOB_AD&t=SR&vt=w&cs=1_da34fab9&cb=1636683885553&jobListingId=1007403677085&jrtk=3-0-1fk8vcakou3ah801-1fk8vcam2u3uj800-2a8e04dca49cd915-&ctt=1636684440337)
+(https://www.indeed.com/viewjob?cmp=WEDO-LDP-Ventures&t=Ui+Ux&jk=e0143aa4457613f2&q=Ui+Ux+Design+Intern&vjs=3)
+
+  -detail oriented-icon/logo case study
+  -reserarch-couponmoms.com, coupons.com, Pennies not Prefection
+- make web page for word counter?
+- 
+
 ## 09 nov 2021
-- whittle current coupon rant into 500 words
+x whittle current coupon rant into 500 words
 - make html layout for that entry 
 
 ## 08 nov 2021

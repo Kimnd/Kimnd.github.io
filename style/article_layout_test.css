@@ -19,9 +19,12 @@ h6 {
   align-self: center;
   justify-self: center;
 }
-img {grid-area: image;}
+img {
+  grid-area: image;
+}
 article {
   grid-area: article;
   padding: 16px;
-  align-self: center;}
+  align-self: center;
+}
 
