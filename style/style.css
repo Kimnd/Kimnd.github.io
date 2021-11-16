@@ -1,0 +1,10 @@
+body {
+}
+content {
+	display: grid;
+	justify-items: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+}
