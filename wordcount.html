@@ -3,7 +3,7 @@
   <head>
     <!-- <link rel="stylesheet" type="text/css" href="style/site.css"> -->
     <!-- <script type="text/javascript" src="js/bracelettest.js"></script> -->
-
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <script type="text/javascript" src="js/menu_test.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <meta charset="utf-8">
@@ -11,12 +11,16 @@
       Counting words
     </title>
     <style>
+      body {
+      	background-color: Khaki;
+      }
       content {
         display: grid;
         grid-template-areas:
           "wordcounter textarea textarea"
           "  infoone   textarea textarea"
           "  infotwo   textarea textarea"
+          "     .      textarea textarea"
         ;
       }
       div.sticky {
@@ -34,11 +38,11 @@
       }
       /*source for the auto-growing text area: https://css-tricks.com/auto-growing-inputs-textareas/*/
       .textarea {
+      	border-style: ;
         grid-area: textarea;
-        
         max-width: 75%;
         /*overflow: hidden;*/
-        resize: horizontal;
+        resize: vertical;
         min-height: 40px;
         line-height: 20px;
       }
@@ -49,11 +53,11 @@
   	<nav id="menu"></nav>
     
     <content>
-      <div class="sticky">
-        <div class="wordcounter">Word count: <span id="count">0</span></div>
+      <!-- <div class="sticky"> -->
+        <div class="sticky wordcounter">Word count: <span id="count">0</span></div>
         <div class="infoone">current char: <span id="character">_</span></div>
         <div class="infotwo">char's number: <span id="charnum">_</span></div>
-      </div>
+      <!-- </div> -->
       <!-- source for the auto-growing text area: https://css-tricks.com/auto-growing-inputs-textareas/ -->
       <span id="input" class="textarea" contenteditable></span>
        <!-- <textarea id='input'></textarea> -->
