@@ -1,20 +1,17 @@
 body {
   display: grid;
-  /*padding: 10px;*/
 }
-
 content {
   display: inherit;
   padding-right: 100px;
   padding-left: 100px;
-  grid-template-columns: auto auto;
   grid-template-areas:
-    "title  title   title   title "
-    "image article article article"
-    "image article article article"
+    "title  title "
+    "image article"
     ;
 }
 h6 {
+  font-size: 17px;
   grid-area: title;
   align-self: center;
   justify-self: center;

@@ -2,13 +2,7 @@ content {
   display: grid;
   padding-right: 100px;
   padding-left: 100px;
-  /*grid-template-columns: auto auto;*/
-  /*grid-template-areas:*/
-/*    "title  title   title   title "
-    "image article article article"
-    "image article article article"
-    ;
-*/}
+}
 .entry_preview {
   justify-items: center;
 	display: grid;
