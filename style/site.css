@@ -44,19 +44,32 @@ grey (jet)--#373737
 /*  display: block;*/
 }
 
+content {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  /*width: 400px;*/
+}
+/*body > content {
+  display: grid;
+  gap: 10px;
+  grid-column-gap: 10px;
+  grid-column-start: 20px;
+}*/
+
+
 html {
   display: grid;
   scroll-behavior: smooth;
 }
 body {
   background-color: #ffffdb;
-  font-size: 100%;
+  /*font-size: 100%;*/
 }
 a {text-decoration: none; color: black;}
 nav {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5px;
   text-align: center;
   color: black;

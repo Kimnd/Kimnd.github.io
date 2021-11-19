@@ -1,0 +1,5 @@
+FEEDBACK: personable? accurate? conversational
+Hello there, I'm Frankie Gallagher, a San Francisco based Computer Scientist focused primarily on User Interface and Experience design.
+I've always been fascinated with complex systems, even as a kid. Though I didn't know what they were called, I would spend hours making little sorting algorithms for decks of cards. There was real joy in discovering many years later that not only was there a word for the games I would play with myself as a kid, but that there were whole fields of study dedicated to understanding similar ideas!
+I intend to carry that joy with me through my career, and try and convey it to others. Instilling joy in a piece of software is my ultimate goal. Whether that's through making the code itself very readable, or by working to make the best possible experience for whoever uses that software.
+I hope you find your visit to my little corner on the interwebz pleasant!

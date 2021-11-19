@@ -1,0 +1,29 @@
+content {
+  display: grid;
+  padding-right: 100px;
+  padding-left: 100px;
+  grid-template-columns: auto auto auto;
+}
+.entry_preview {
+  justify-items: center;
+	display: grid;
+	grid-template-areas:
+	"title"
+	"image"
+	"text"
+	;
+}
+.entry_preview > h1 {
+  grid-area: title;
+}
+img {
+  grid-area: image;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration-style: -moz-none;
+  color: black;
+  grid-area: text;
+  justify-self: left;
+}

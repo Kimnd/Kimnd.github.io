@@ -1,0 +1,27 @@
+body {
+  display: grid;
+}
+content {
+  display: inherit;
+  padding-right: 100px;
+  padding-left: 100px;
+  grid-template-areas:
+    "title  title "
+    "image article"
+    ;
+}
+h6 {
+  font-size: 17px;
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+}
+img {
+  grid-area: image;
+}
+article {
+  grid-area: article;
+  padding: 16px;
+  align-self: center;
+}
+
