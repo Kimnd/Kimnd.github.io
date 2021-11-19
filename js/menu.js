@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //Creates text nodes so that the links have, yknow, text
   var hometext = document.createTextNode("Home");
   var abouttext = document.createTextNode("About");
-  var blogtext = document.createTextNode("Blog");
+  var blogtext = document.createTextNode("Writing");
   var faqtext = document.createTextNode("FAQ");
 
 //Attatches text nodes to corresponding anchor nodes
