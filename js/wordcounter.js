@@ -23,6 +23,7 @@ input.addEventListener('keyup', function(e) {
 function wordcount(text) {
   //note: when input area was changed to a span, needed to change from
   //var text = input.value.split(' ');
+  //source: https://www.geeksforgeeks.org/javascript-get-the-text-of-a-span-element/
   var text = input.innerText.split(' ');
   var wordcount = 0;
   for (var i = 0; i < text.length; i++) {
