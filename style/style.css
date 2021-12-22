@@ -4,6 +4,8 @@ body {
 content {
 	display: inherit;
 	justify-items: center;
+  padding-right:100px;
+  padding-left:100px;
 }
 img {
 	height: 100%;
