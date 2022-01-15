@@ -1,29 +1,59 @@
 content {
+  background-color: BurlyWood;
   display: grid;
   padding-right: 100px;
   padding-left: 100px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto ;
+  grid-gap: 15px;
 }
+
+.index_card_pos {
+  border-radius: 20px;
+  /*               right  bottom */
+  box-shadow: inset -7px -3px       20px -5px silver;
+  display: grid;
+  background-color: ivory;
+  transform: rotate(2deg);
+  transition: .35s;
+}
+.index_card_neg {
+  display: grid;
+  background-color: ivory;
+  transform: rotate(-2deg);
+}
+.index_card_pos:hover {
+  transform: rotate(-3deg);
+}
+
 .entry_preview {
-  justify-items: center;
+  border-radius: 20px;
+  border-color: orange;
+  border-style: solid;
+  /*justify-items: center;*/
 	display: grid;
-	grid-template-areas:
+  background-color: grey;
+/*	grid-template-areas:
 	"title"
 	"image"
 	"text"
-	;
+	;*/
 }
-.entry_preview > h1 {
-  grid-area: title;
+
+.entry_preview > h3 {
+  /*grid-area: title;*/
+  /*height: 300px;*/
+  text-align: center;
 }
+
 img {
-  grid-area: image;
-  height: 100%;
-  width: 100%;
+  /*grid-area: image;*/
+  justify-self: center;
+  max-height: 200px;
+  /*width: fit;*/
 }
 a {
   text-decoration-style: -moz-none;
   color: black;
-  grid-area: text;
-  justify-self: left;
+  /*grid-area: text;*/
+  /*justify-self: left;*/
 }

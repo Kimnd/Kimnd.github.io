@@ -1,5 +1,12 @@
+/*
+colors
+blue yonder: #547AA5;
+
+*/
+
 body {
 	display: grid;
+  background-color: #ffffdb;
 }
 content {
 	display: inherit;
