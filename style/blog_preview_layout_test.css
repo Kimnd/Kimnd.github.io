@@ -1,14 +1,14 @@
 content {
   background-color: BurlyWood;
   display: grid;
-  padding-right: 100px;
-  padding-left: 100px;
+  /*padding-right: 100px;*/
+  /*padding-left: 100px;*/
   grid-template-columns: auto ;
   grid-gap: 15px;
 }
 
 .index_card {
-  justify-content: center;
+  /*justify-content: center;*/
   justify-self: center;
   /*width: 90%;*/
   border-radius: 20px;
@@ -17,6 +17,7 @@ content {
   display: grid;
   background-color: ivory;
   transition: .5s;
+  width: fit-content;
 }
 .index_card:hover {
   box-shadow: inset -7px -3px       20px -5px grey;
@@ -26,15 +27,15 @@ content {
   text-align: center;
 }
 .index_card > p {
-  padding-left: 30px;
-  padding-right: 30px;
+  /*padding-left: 30px;*/
+  /*padding-right: 30px;*/
 }
 
 .index_card > img {
   /*grid-area: image;*/
   justify-self: center;
-  /*max-height: 200px;*/
-  width: fit;
+  max-height: 200px;
+  max-width: fit-content;
 }
 a {
   text-decoration-style: -moz-none;
