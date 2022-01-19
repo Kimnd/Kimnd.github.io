@@ -1,23 +1,26 @@
 /*
 colors
 blue yonder: #547AA5;
-
 */
 
 body {
-	display: grid;
+  display: grid;
   background-color: #ffffdb;
 }
 content {
-	display: inherit;
-	justify-items: center;
+  display: inherit;
+  justify-items: center;
   padding-right:100px;
   padding-left:100px;
 }
-img {
-	height: 100%;
-	width: 100%;
+.left_img {
+   float: left;
+   height: 500px;
 }
+/*img {
+  height: 100%;
+  width: 100%;
+}*/
 nav {
   display: inherit;
   grid-template-rows: 1fr;
