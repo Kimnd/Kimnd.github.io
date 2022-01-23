@@ -35,3 +35,5 @@ function widthReport() {
   console.log("Width is: " + width + " pixels.");
   return width;
 }
+
+document.
