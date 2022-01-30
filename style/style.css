@@ -17,16 +17,16 @@ p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 /*
-.left_img {
-   float: left;
-   height: 500px;
-}
++---------------+
+| Image Styling |
++---------------+
 */
-/*img {
-  height: 100%;
-  width: 100%;
-}*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 /*
 +-----------------+
@@ -60,3 +60,25 @@ nav > a:hover {
 | Images |
 +--------+
 */
+.rightImage{
+  display: grid;
+  grid-template-areas:
+  "image text";
+  align-items: center;
+}
+.leftImage {
+  display: grid;
+  grid-template-areas:
+  "text image";
+  align-items: center;
+}
+.rightImage > img{grid-area: image;}
+.leftImage > img{grid-area: image;}
+.rightImage > div {
+  grid-area: text;
+  padding-left: 16px;
+}
+.leftImage > div {
+  grid-area: text;
+  padding-right: 16px;
+}
