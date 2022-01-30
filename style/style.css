@@ -2,40 +2,61 @@
 colors
 blue yonder: #547AA5;
 */
-
 body {
   display: grid;
   background-color: #ffffdb;
 }
 content {
   display: inherit;
-  justify-items: center;
+  /*justify-items: center;*/
   padding-right:100px;
   padding-left:100px;
+
 }
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*
 .left_img {
    float: left;
    height: 500px;
 }
+*/
 /*img {
   height: 100%;
   width: 100%;
 }*/
+
+/*
++-----------------+
+|  Navbar styling |
++-----------------+
+*/
 nav {
   display: inherit;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5px;
   text-align: center;
-  color: black;
+  /*transition: .3s;*/
+
 }
 nav > a {
   padding-top: 5px;
   padding-bottom: 5px;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
+  color: black;
 }
 nav > a:hover {
-  opacity: 1.0;
+  /*opacity: 1.0;*/
   background-color: #000026; /*oxford blue*/
   color: snow; /*so the text is readable*/
+  transition: 1s;
 }
+
+/*
++--------+
+| Images |
++--------+
+*/
