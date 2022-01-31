@@ -1,7 +1,10 @@
-content {
+body {
   background-color: BurlyWood;
   display: grid;
-  grid-template-columns: auto ;
+}
+content {
+  display: inherit;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 }
 
@@ -15,7 +18,7 @@ content {
   width: fit-content;
 }
 .index_card:hover {
-  box-shadow: inset -7px -3px       20px -5px grey;
+  box-shadow: inset -7px -3px 5px 0px grey;
   transform: rotate(-3deg);
 }
 .index_card > h3 {
@@ -29,7 +32,7 @@ content {
 .index_card > img {
   justify-self: center;
   max-height: 200px;
-  max-width: fit-content;
+  max-width: 100%;
 }
 a {
   text-decoration-style: -moz-none;
