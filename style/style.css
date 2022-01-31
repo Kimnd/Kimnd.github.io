@@ -13,6 +13,8 @@ body {
   background-color: #ffffdb;
 }
 content {
+  margin-top: 16px;
+  margin-bottom: 16px;
   display: inherit;
   /*justify-items: center;*/
   padding-right:100px;
