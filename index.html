@@ -3,30 +3,35 @@
   <head>
     <!-- <link rel="stylesheet" type="text/css" href="style/site.css"> -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/article_layout_test.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="style/article_layout_test.css"> -->
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/screen_width.js"></script>
 
     <meta charset="utf-8">
-    <title>
-      Fif's Website
-    </title>
+    <title>Fif's Website</title>
   </head>
 
-  <body>
+  <body onresize="getwidth()">
+ 
     <nav id="menu"></nav>
-
+ 
+    <!-- <p id="widthtarget">s</p> -->
     <content>
-      <h6>About</h6>
-      <img src="images/Birthday_smile.jpg" alt="An image of Frankie Gallagher, smiling." height="512" width="384" style="float:left">
-      <article>
-        <p>Hello there, I'm Frankie Gallagher, a San Francisco based Computer Scientist focused primarily on User Interface and Experience design.</p>
-        <p>I've always been fascinated with complex systems, even as a kid. Though I didn't know what they were called, I would spend hours making little sorting algorithms for decks of cards. There was real joy in discovering many years later that not only was there a word for the games I would play with myself as a kid, but that there were whole fields of study dedicated to understanding similar ideas!</p>
-        <p>I intend to carry that joy with me through my career, and try and convey it to others. Instilling joy in a piece of software is my ultimate goal. Whether that's through making the code itself very readable, or by working to make the best possible experience for whoever uses that software.</p>
-        <p>I hope you find your visit to my little corner on the interwebz pleasant!</p>
-      </article>
+      <!-- <h1>About</h1> -->
+      <div class="rightImage">
+        <img src="images/Birthday_smile.jpg" alt="An image of Frankie Gallagher, smiling.">
+        <div>
+          <p>Hello there, I'm Frankie Gallagher, a San Francisco based Computer Scientist focused primarily on User Interface and Experience design.</p>
+          <p>I've always been fascinated with complex systems, even as a kid. Though I didn't know what they were called, I would spend hours making little sorting algorithms for decks of cards. There was real joy in discovering many years later that not only was there a word for the games I would play with myself as a kid, but that there were whole fields of study dedicated to understanding similar ideas!</p>
+          <p>I intend to carry that joy with me through my career, and try and convey it to others. Instilling joy in a piece of software is my ultimate goal. Whether that's through making the code itself very readable, or by working to make the best possible experience for whoever uses that software.</p>
+          <p>I hope you find your visit to my little corner on the interwebz pleasant!</p>
+        </div>
+      </div>
     </content>
     
     <footer id="foot"></footer>
+
   </body>
 </html>

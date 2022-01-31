@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var linkedintext = document.createTextNode("Linkedin");
 	var githubtext = document.createTextNode("Github");
 	var emailtext = document.createTextNode("Email");
-  var copyrighttext = document.createTextNode("© 2021 by Frankie Gallagher");
+  var copyrighttext = document.createTextNode("© 2022 by Frankie Gallagher");
 
 	linkedinnode.appendChild(linkedintext);
 	githubnode.appendChild(githubtext);

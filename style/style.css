@@ -1,31 +1,130 @@
+/*
+colors
+blue yonder: #547AA5;
+linkedin: #2867B2;
+github: #333333;
+gmail
+  red M: #E34D42;
+  envelope: #F3F3E8;
+  shadow: #B0B0A6;
+*/
 body {
-	display: grid;
+  display: grid;
+  background-color: #ffffdb;
 }
 content {
-	display: inherit;
-	justify-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inherit;
+  /*justify-items: center;*/
   padding-right:100px;
   padding-left:100px;
+
 }
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* +---------------+
+   | Image Styling |
+   +---------------+ */
 img {
-	height: 100%;
-	width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
+
+/* +-----------------+
+   |  Navbar styling |
+   +-----------------+ */
 nav {
   display: inherit;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5px;
   text-align: center;
-  color: black;
 }
 nav > a {
   padding-top: 5px;
   padding-bottom: 5px;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
+  color: black;
 }
 nav > a:hover {
-  opacity: 1.0;
+  /*opacity: 1.0;*/
   background-color: #000026; /*oxford blue*/
   color: snow; /*so the text is readable*/
+  transition: 1s;
+}
+
+/* +--------+
+   | Footer |
+   +--------+ */
+footer {
+  display: inherit;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  text-align: center;
+  padding: 10px;
+}
+footer > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*linkedin: #2867B2;
+github: #333333;
+gmail
+  red M: #E34D42;
+  envelope: #F3F3E8;
+  shadow: #B0B0A6;*/
+footer > a {
+  color: black;
+  transition: .6s;
+}
+footer > a[href*="linkedin"]:hover {
+  color: #f3f3e8;
+  background-color: #2867B2;
+}
+footer > a[href*="github"]:hover {
+  color: #f3f3e8;
+  background-color:#333333;
+}
+footer > a[href*="mailto"]:hover {
+  color: #E34D42;
+  background-color: #f3f3e8;
+}
+/*
+linkedin: #2867B2;
+github: #333333;
+gmail
+  red M: #E34D42;
+  envelope: #F3F3E8;
+  shadow: #B0B0A6;
+*/
+
+/* +--------+
+   | Images |
+   +--------+ */
+.rightImage{
+  display: grid;
+  grid-template-areas:
+  "image text";
+  align-items: center;
+}
+.leftImage {
+  display: grid;
+  grid-template-areas:
+  "text image";
+  align-items: center;
+}
+.rightImage > img{grid-area: image;}
+.leftImage > img{grid-area: image;}
+.rightImage > div {
+  grid-area: text;
+  padding-left: 16px;
+}
+.leftImage > div {
+  grid-area: text;
+  padding-right: 16px;
 }
