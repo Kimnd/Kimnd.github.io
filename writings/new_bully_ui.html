@@ -18,7 +18,7 @@
 
       <p>I'll be taking a two-pronged approach. The first will be a redesign that avoids changes as much as possible--one that could potentially be slotted into the game as is. That'll address some of the more structural problems. My second redesign will be less constrained to the actual game, instead focusing only on making the best UI I can imagine. And we'll see where we go from there.</p>
 
-      <h4>Minimal Change design</h4>
+      <h3>Minimal Change design</h3>
 
       <p>For the "minimal" redesign, the goal is to maximize the quality of the menus as they are while changing as little as possible. Now since I don't know how Bully actually works or how its menus are coded, there's no way to know how difficult any given change I propose may be. But I'm operating on some assumptions:</p>
       <ul>- moving a statistic to a different menu, not showing a statistic, or making a new page within the menu is easy</ul>
@@ -27,19 +27,30 @@
       <p>The most drastic change I'd like to make is to remove the "UPGRADES" menu entirely. In the new version, the regular "STATS" menu has an additional tab for upgrades, and lists all of the upgrades under their associated categories found in the base game in alphabetical order. I say this is a drastic change mostly because I don't know how the menu works under the hood, so it's possible that for some reason the game isn't able to display text in a specific way depending on the sub-menu it's a part of.</p>
       <p>The other changes I have in mind are smaller. Reducing the statistics the game displays is the main thing I have in mind. The best way to reduce them is to find the statistics that are extremely granular. Here's an example--a section tracks the total amount of photos you've taken and, separately, how many pictures you've taken of townsfolk, teachers, prefects, and each of the five cliques. This applies to many of the statistics in the game, where the stat is tracked individually for different types of people.</p>
 
-      <p>In our streamlined version of the menu, statistics that are split into multiple types of people this way are instead categorized by gameplay function. Tracking all of the cliques separately is cluttered, and it totally ignores those who aren't in cliques. So instead they'll be merged into "Kids". "Students" wouldn't work, since the one of the cliques technically doesn't go to school, and "Opponents" also wouldn't work since plenty of the students aren't meant to be fought. After that, merging "Teachers" and "Prefects" into "Authority" makes more sense to me, and it also would include the police officers that serve as defacto prefects when you're not on school grounds. This would leave the townspeople as their own kind of "misc" section, but that makes sense from a story perspective. As a child, your peers are the people you think about the most, and the adults that affect your life are also extremely important. But that attention doesn't need to be paid to people who aren't your age or part of your life.</p>
+      <div class="leftImage">
+        <img>
+        <div>
+          <p>In our streamlined version of the menu, statistics that are split into multiple types of people this way are instead categorized by gameplay function. Tracking all of the cliques separately is cluttered, and it totally ignores those who aren't in cliques. So instead they'll be merged into "Kids". "Students" wouldn't work, since the one of the cliques technically doesn't go to school, and "Opponents" also wouldn't work since plenty of the students aren't meant to be fought. After that, merging "Teachers" and "Prefects" into "Authority" makes more sense to me, and it also would include the police officers that serve as defacto prefects when you're not on school grounds. This would leave the townspeople as their own kind of "misc" section, but that makes sense from a story perspective. As a child, your peers are the people you think about the most, and the adults that affect your life are also extremely important. But that attention doesn't need to be paid to people who aren't your age or part of your life.</p>
+        </div>
+      </div>
 
-      <h4>Radical</h4>
+      <h3>Radical</h3>
 
       <p>While the changes explored in the first section aren't eye-catching, they're the bric-a-brack that form the foundation for the more radical departures I'm interested in.</p>
 
       <p>The most striking change is the medium of the menu. Reflecting its personal nature to each player, this stats menu will be styled as if it is the protagonist's school notebook.
       <(stats menu at start of game) general tab notebook image></p>
+
       <h4>Aesthetics</h4>
-      <p>This page is the equivalent of the "general" tab in the official game. It offers some immediately striking differences: it's handwritten, the info is in sentences, and there aren't as many points. This presentation focuses on the character the player is piloting and his interpretation of the events we've seen. As an example, the "Been stuck here 11hr, 48min" scrawled at the top of the page is the same as the "Time Played" statistic--having him write about being "stuck here" makes his aggressive attitude understandable. Combine that with another key feature of this menu, and we have a very potent storytelling tool.</p>
+      <div class="leftImage">
+        <img src="../images/new_bully_ui/general.png">
+        <div>
+          <p>This page is the equivalent of the "general" tab in the official game. It offers some immediately striking differences: it's handwritten, the info is in sentences, and there aren't as many points. This presentation focuses on the character the player is piloting and his interpretation of the events we've seen. As an example, the "Been stuck here 11hr, 48min" scrawled at the top of the page is the same as the "Time Played" statistic--having him write about being "stuck here" makes his aggressive attitude understandable. Combine that with another key feature of this menu, and we have a very potent storytelling tool.</p>
+        </div>
+      </div>
 
       <h4>Mechanical Changes</h4>
-      <p>The primary gameplay feature of this redesign is that it can change during the course of the game. This will mostly be achieved by passing Math Class minigames, upgrading the menu to display more complex things. But I also mean this in a more subtle way.</p>
+      <p>The primary gameplay feature of this redesign is that it can change during the course of the game. This will mostly be achieved by passing Math Class minigames, upgrading the menu to display more complex things. But I it'll change in subtler ways.</p>
 
       <p>Since the class minigames are entirely optional, it's important to design the base menu to carry some story and gameplay weight, even without any upgrades. menu we saw earlier. It covered basic information like how far into the game the player is, how often they've done basic actions, etc. Importantly, it can also change based on story progression--for example, one of the statistics the game tracks that I find very amusing is the "Hit By Car" statistic. If that statistic ever ticks past 0, that page will get an additional line at the bottom in all caps: "I GOT HIT BY A CAR", adding "..2 TIMES", "3 TIMES", etc. for each additional time. But if it never happens, it never shows up on the page.</p>
 
