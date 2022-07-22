@@ -5,7 +5,7 @@ More specific sources will be provided as relevant in the code
 //Initialization variables
 //Board variables
 var gameBoard;
-var boardwidth = 470;
+var boardwidth = 4700;
 var boardheight = 200;
 var gridsize = 10;
 //Game object variables!
@@ -38,11 +38,13 @@ function control(e) {
 function startGame() {
   console.log("Game has started!");
   gameBoard.start();
-  agameobj = new gameobject(4*gridsize, 2*gridsize, "blue");
+  agameobj = new gameobject(4*gridsize, 2*gridsize);
 }
 
 //Generic game object constructor
-function gameobject(width, height, color = "orange", x = gridsize, y = gridsize) {
+//orange dark color: #a65a08
+//orange light color: #f69d3f
+function gameobject(width, height, color = "#f69d3f", x = gridsize, y = gridsize) {
   this.width = width;
   this.height = height;
   this.color = color;
@@ -53,13 +55,22 @@ function gameobject(width, height, color = "orange", x = gridsize, y = gridsize)
   this.update = function() {
     ctx = gameBoard.context;
     ctx.fillStyle = color;
+    ctx.strokeStyle = "#a65a08";
     ctx.fillRect(this.x, this.y, this.width, this.height);
+    ctx.strokeRect(this.x, this.y, this.width, this.height);
   }
   this.newposition = function() {
     // console.log("moving!");
     this.x += this.speedx;
     this.y += this.speedy;
   }
+}
+
+function torusMovement(gameobj) {
+  if ((gameobj.x) > (boardwidth - gameobj.width)) {gameobj.x = 0;}
+  if (gameobj.x < 0) {gameobj.x = boardwidth - gameobj.width;}
+  if ((gameobj.y) > (boardheight - gameobj.height)) {gameobj.y = 0;}
+  if (gameobj.y < 0) {gameobj.y = boardheight - gameobj.height;}
 }
 
 
@@ -75,16 +86,22 @@ var gameBoard = {
     // document.getElementById("gameBoard").insertBefore(this.canvas, document.body.childNodes[0]);
     this.interval = setInterval(updateBoard, 10);
 
+//taken from
+// https://www.w3schools.com/graphics/game_controllers.asp
     window.addEventListener('keydown', function (e) {
       gameBoard.keys = (gameBoard.keys || []);
       gameBoard.keys[e.keyCode] = (e.type == "keydown");
-      console.log("keydown");
-      document.getElementById("keydown").innerHTML = "keys down: " + gameBoard.keys;
+      // console.log("keydown");
+      // document.getElementById("keydown").innerHTML = "keys down: " + gameBoard.keys;
     })
     window.addEventListener('keyup', function (e) {
-      // gameBoard.keys[e.keyCode] = (e.type == "keyup");
+      //gameBoard.keys[e.keyCode] = (e.type == "keyup");
+      //^this line gave me so much trouble, because for some reason the above code on
+      // w3schools does NOT do what it does when i put it into my website, instead
+      // the computer thinks a key is always being pressed after it's pressed one time
       gameBoard.keys[e.keyCode] = false;
-      console.log("KEYUP");
+      //...not that i'm bitter or anything
+      // console.log("KEYUP");
 //document.getElementById("keyup").innerHTML = "keys up : " + gameBoard.keys;
     })
   },
@@ -95,7 +112,7 @@ var gameBoard = {
 
 //Updates the game board
 function updateBoard() {
-  gameBoard.clear();
+  // gameBoard.clear();
   // console.log("gameboard.key: " + gameBoard.keys + ".");
   agameobj.speedx = 0;
   agameobj.speedy = 0;
@@ -120,6 +137,7 @@ function updateBoard() {
     agameobj.speedy = 1;
   }
 
+  torusMovement(agameobj);
   // agameobj.x += gridsize;
   agameobj.newposition();
   agameobj.update();
