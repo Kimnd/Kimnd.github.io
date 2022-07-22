@@ -41,6 +41,28 @@ function startGame() {
   agameobj = new gameobject(4*gridsize, 2*gridsize, "blue");
 }
 
+//Generic game object constructor
+function gameobject(width, height, color = "orange", x = gridsize, y = gridsize) {
+  this.width = width;
+  this.height = height;
+  this.color = color;
+  this.x = x;
+  this.y = y;
+  this.speedx = 0;
+  this.speedy = 0;
+  this.update = function() {
+    ctx = gameBoard.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+  }
+  this.newposition = function() {
+    // console.log("moving!");
+    this.x += this.speedx;
+    this.y += this.speedy;
+  }
+}
+
+
 //Creates the game board on which everthing will be drawn!
 var gameBoard = {
   canvas : document.createElement("canvas"),
@@ -56,10 +78,13 @@ var gameBoard = {
     window.addEventListener('keydown', function (e) {
       gameBoard.keys = (gameBoard.keys || []);
       gameBoard.keys[e.keyCode] = (e.type == "keydown");
+      console.log("keydown");
       document.getElementById("keydown").innerHTML = "keys down: " + gameBoard.keys;
     })
     window.addEventListener('keyup', function (e) {
-      gameBoard.keys[e.keyCode] = (e.type == "keyup");
+      // gameBoard.keys[e.keyCode] = (e.type == "keyup");
+      gameBoard.keys[e.keyCode] = false;
+      console.log("KEYUP");
 //document.getElementById("keyup").innerHTML = "keys up : " + gameBoard.keys;
     })
   },
@@ -100,23 +125,3 @@ function updateBoard() {
   agameobj.update();
 }
 
-//Generic game object constructor
-function gameobject(width, height, color = "orange", x = gridsize, y = gridsize) {
-  this.width = width;
-  this.height = height;
-  this.color = color;
-  this.x = x;
-  this.y = y;
-  this.speedx = 0;
-  this.speedy = 0;
-  this.update = function() {
-    ctx = gameBoard.context;
-    ctx.fillStyle = color;
-    ctx.fillRect(this.x, this.y, this.width, this.height);
-  }
-  this.newposition = function() {
-    console.log("moving!");
-    this.x += this.speedx;
-    this.y += this.speedy;
-  }
-}
