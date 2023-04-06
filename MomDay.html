@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <meta charset="utf-8">
+    <title>Title</title>
+  </head>
+
+  <body>
+    <nav id="menu"></nav>	
+
+    <content>
+      
+      <h1>Replace this title!</h1>
+      <canvas id="momCanvas" onclick="momCanvas()" width="1000" height="5000" style="border:1px solid #d3d3d3;">
+
+    </content>
+
+    <footer id="foot"></footer>
+  </body>
+  <script>
+    function momCanvas() {
+      console.log("In momCanvas()");
+      var canvas = document.getElementById("momCanvas");
+      var ctx = canvas.getContext("2d");
+
+      var background = new Image();
+      background.src = "images/tasty_egg.png";
+
+//      background.onload = function(){
+        //draw image
+        console.log("Drawing image");
+        ctx.drawImage(background, 10, 10);
+        // ctx.fillStyle = "rgba(200, 0, 0, 0.05)";
+        // ctx.fillRect(0, 0, 50, 50);
+
+//      };
+//      level = new lvlBackground("images/tasty_egg.png");
+///look at later: https://stackoverflow.com/questions/14757659/loading-an-image-onto-a-canvas-with-javascript
+      // ctx.drawImage(level,10,10);
+    }
+    // function lvlBackground(background){
+    //   this.background = new Image();
+    //   this.background.src = background;
+    // }
+
+  </script>
+
+</html>
