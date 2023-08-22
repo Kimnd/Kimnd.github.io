@@ -63,7 +63,7 @@ nav > a:hover {
 footer {
   display: inherit;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5px;
   text-align: center;
   padding: 10px;
@@ -80,7 +80,7 @@ gmail
   shadow: #B0B0A6;*/
 footer > a {
   color: black;
-  transition: .6s;
+  transition: .4s;
 }
 footer > a[href*="linkedin"]:hover {
   color: #f3f3e8;
@@ -89,6 +89,10 @@ footer > a[href*="linkedin"]:hover {
 footer > a[href*="github"]:hover {
   color: #f3f3e8;
   background-color:#333333;
+}
+footer > a[href*="itch.io"]:hover{
+  color: #FA5C5C;
+  background-color: #ffffff;
 }
 footer > a[href*="mailto"]:hover {
   color: #E34D42;
