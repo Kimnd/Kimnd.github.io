@@ -11,6 +11,18 @@ gmail
 body {
   display: grid;
   background-color: #ffffdb;
+  font-family: monospace;
+/**/
+/*  font-family: Poppins, sans-serif;
+  font-size: 20px;
+*/}
+h2 {
+/*  font-family: 'Mountains of Christmas';*/
+}
+h1 {
+  font-family: 'Mountains of Christmas';
+/*  font-size: 22px;*/
+  text-align: center;
 }
 content {
   margin-top: 16px;
@@ -38,6 +50,7 @@ img {
    |  Navbar styling |
    +-----------------+ */
 nav {
+
   display: inherit;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
