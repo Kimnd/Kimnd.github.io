@@ -11,6 +11,18 @@ gmail
 body {
   display: grid;
   background-color: #ffffdb;
+  font-family: monospace;
+/**/
+/*  font-family: Poppins, sans-serif;
+  font-size: 20px;
+*/}
+h2 {
+/*  font-family: 'Mountains of Christmas';*/
+}
+h1 {
+  font-family: 'Mountains of Christmas';
+/*  font-size: 22px;*/
+  text-align: center;
 }
 content {
   margin-top: 16px;
@@ -26,6 +38,16 @@ p {
   margin-bottom: 5px;
 }
 
+/*Accessability, making it highlight a border*/
+a:hover {
+  border-radius: 8px;
+/*  border: solid 2px purple;*/
+}
+a:focus {
+  border-radius: 8px;
+  border: solid 2px purple;
+}
+
 /* +---------------+
    | Image Styling |
    +---------------+ */
@@ -38,11 +60,13 @@ img {
    |  Navbar styling |
    +-----------------+ */
 nav {
+/*  padding: 8px;*/
   display: inherit;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5px;
   text-align: center;
+  padding: 2px;
 }
 nav > a {
   padding-top: 5px;
@@ -52,9 +76,11 @@ nav > a {
 }
 nav > a:hover {
   /*opacity: 1.0;*/
+/*  border-radius: 8px;*/
+
   background-color: #000026; /*oxford blue*/
   color: snow; /*so the text is readable*/
-  transition: 1s;
+  transition: .5s;
 }
 
 /* +--------+
@@ -80,22 +106,28 @@ gmail
   shadow: #B0B0A6;*/
 footer > a {
   color: black;
-  transition: .4s;
+  border: solid 2px #ffffdb;
+  transition: .3s;
 }
+
 footer > a[href*="linkedin"]:hover {
   color: #f3f3e8;
+  border: solid 2px #2867b2;
   background-color: #2867B2;
 }
 footer > a[href*="github"]:hover {
   color: #f3f3e8;
+  border: solid 2px #333333;
   background-color:#333333;
 }
 footer > a[href*="itch.io"]:hover{
   color: #FA5C5C;
+  border: solid 2px #FA5C5C;
   background-color: #ffffff;
 }
 footer > a[href*="mailto"]:hover {
   color: #E34D42;
+  border: solid 2px #E34D42;
   background-color: #f3f3e8;
 }
 /*

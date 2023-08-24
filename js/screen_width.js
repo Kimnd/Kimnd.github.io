@@ -33,7 +33,9 @@ var widthtarget = document.getElementById("widthtarget");
   
 function getwidth() {
   var width = window.innerWidth;
-  widthtarget.innerHTML = width + " pixels";
+  // widthtarget.innerHTML = width + " pixels";
+  console.log("Width is: " + width + " pixels.");
+
 }
 /*
 

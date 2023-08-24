@@ -11,6 +11,32 @@
 
     <meta charset="utf-8">
     <title>Fif's Website</title>
+     <style>
+    .rightImage {
+      display: flex;
+      flex-direction: row; /* Default layout, image to the right */
+    }
+
+    .rightImage img {
+      max-width: 50%; /* Ensure the image spans the container width */
+      margin-right: 10px; /* Add spacing between image and text */
+    }
+
+    /* Add a media query to change the layout when the width is reduced */
+    @media (max-width: 768px) {
+      .rightImage {
+        flex-direction: column; /* Image above the text */
+      }
+/*      div {
+        min-width: 200px;
+      }
+*/      .rightImage img {
+        max-width: 100%;
+        margin-right: 0; /* Remove right margin for vertical layout */
+        margin-bottom: 10px; /* Add spacing below the image */
+      }
+    }
+  </style>
   </head>
 
   <body onresize="getwidth()">
