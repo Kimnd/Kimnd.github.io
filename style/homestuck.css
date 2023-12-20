@@ -1,0 +1,53 @@
+body {
+  display: grid;
+  background-color: #c6c6c6;
+  font-family: monospace;
+  padding-right:134px;
+  padding-left:134px;
+}
+
+content{
+  display: inherit;
+  background-color: #eee;
+  padding-right:34px;
+  padding-left:34px;
+}
+
+.chatlog {
+  border: 1px dashed;
+  padding: 15px 5%;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: courier, monospace;
+}
+
+p {
+  font-size: 14px;
+  margin-top: .4em;
+  margin-bottom: .4em;
+}
+nav p { font-size: 18px; }
+a { color: #00e; }
+
+span {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: courier, monospace;        
+}
+
+
+h3 {
+  text-align: center;
+  font-family: courier, monospace;
+}
+
+/* Classes (a-z, colors and names added as needed)*/
+.dave {color: #e00707;}
+.docscratch {color: #fff;}
+.eridan {color: #6a006a;}
+.feferi {color: #77003c;}
+.gamzee {color: #2b0057;}
+.kanaya {color: #008141;}
+.karkat {color: #626262}
+.rose {color: #b536da;}
+.vriska {color: #005682;}
