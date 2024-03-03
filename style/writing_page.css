@@ -2,7 +2,7 @@ body {
   background-color: BurlyWood;
   display: grid;
 }
-content {
+main {
   display: inherit;
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
