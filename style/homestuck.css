@@ -6,7 +6,7 @@ body {
   padding-left:134px;
 }
 
-content{
+main {
   display: inherit;
   background-color: #eee;
   padding-right:34px;
