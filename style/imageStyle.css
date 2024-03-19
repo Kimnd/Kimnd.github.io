@@ -1,0 +1,26 @@
+.rightImage{
+  display: grid;
+  grid-template-areas:
+  "image paragraph";
+  align-items: center;
+}
+.leftImage {
+  display: grid;
+  grid-template-areas:
+  "paragraph image";
+  align-items: center;
+}
+.rightImage > img{grid-area: image;}
+.leftImage > img{grid-area: image;}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.rightImage > p {
+  grid-area: paragraph;
+  padding-left: 16px;
+}
+.leftImage > p {
+  grid-area: paragraph;
+  padding-right: 16px;
+}

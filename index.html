@@ -3,30 +3,62 @@
   <head>
     <!-- <link rel="stylesheet" type="text/css" href="style/site.css"> -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/article_layout_test.css">
+    <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+
+    <!-- <link rel="stylesheet" type="text/css" href="style/article_layout_test.css"> -->
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/screen_width.js"></script>
 
     <meta charset="utf-8">
-    <title>
-      Fif's Website
-    </title>
+    <title>Fif's Website</title>
+     <style>
+    .rightImage {
+      display: flex;
+      flex-direction: row; /* Default layout, image to the right */
+    }
+
+    .rightImage img {
+      max-width: 50%; /* Ensure the image spans the container width */
+      margin-right: 10px; /* Add spacing between image and text */
+    }
+
+    /* Add a media query to change the layout when the width is reduced */
+    @media (max-width: 768px) {
+      .rightImage {
+        flex-direction: column; /* Image above the text */
+      }
+/*      div {
+        min-width: 200px;
+      }
+*/      .rightImage img {
+        max-width: 100%;
+        margin-right: 0; /* Remove right margin for vertical layout */
+        margin-bottom: 10px; /* Add spacing below the image */
+      }
+    }
+  </style>
   </head>
 
-  <body>
+  <body onresize="getwidth()">
+ 
     <nav id="menu"></nav>
-
-    <content>
-      <h6>About</h6>
-      <img src="images/Birthday_smile.jpg" alt="An image of Frankie Gallagher, smiling." height="512" width="384" style="float:left">
-      <article>
-        <p>Hello there, I'm Frankie Gallagher, a San Francisco based Computer Scientist focused primarily on User Interface and Experience design.</p>
-        <p>I've always been fascinated with complex systems, even as a kid. Though I didn't know what they were called, I would spend hours making little sorting algorithms for decks of cards. There was real joy in discovering many years later that not only was there a word for the games I would play with myself as a kid, but that there were whole fields of study dedicated to understanding similar ideas!</p>
-        <p>I intend to carry that joy with me through my career, and try and convey it to others. Instilling joy in a piece of software is my ultimate goal. Whether that's through making the code itself very readable, or by working to make the best possible experience for whoever uses that software.</p>
-        <p>I hope you find your visit to my little corner on the interwebz pleasant!</p>
-      </article>
-    </content>
+ 
+    <!-- <p id="widthtarget">s</p> -->
+    <main>
+      <!-- <h1>About</h1> -->
+      <div class="rightImage">
+        <img src="images/Birthday_smile.jpg" alt="An image of Frankie Gallagher, smiling.">
+        <div>
+          <p>Hello there, I'm Frankie Gallagher, a San Francisco based Computer Scientist focused primarily on User Interface and Experience design.</p>
+          <p>I've always been fascinated with complex systems, even as a kid. Though I didn't know what they were called, I would spend hours making little sorting algorithms for decks of cards. There was real joy in discovering many years later that not only was there a word for the games I would play with myself as a kid, but that there were whole fields of study dedicated to understanding similar ideas!</p>
+          <p>I intend to carry that joy with me through my career, and try and convey it to others. Instilling joy in a piece of software is my ultimate goal. Whether that's through making the code itself very readable, or by working to make the best possible experience for whoever uses that software.</p>
+          <p>I hope you find your visit to my little corner on the interwebz pleasant!</p>
+        </div>
+      </div>
+    </main>
     
     <footer id="foot"></footer>
+
   </body>
 </html>

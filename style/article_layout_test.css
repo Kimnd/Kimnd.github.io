@@ -1,7 +1,7 @@
 body {
   display: grid;
 }
-content {
+main {
   display: inherit;
   padding-right: 100px;
   padding-left: 100px;
