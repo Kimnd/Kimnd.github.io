@@ -38,11 +38,11 @@ p {
   margin-bottom: 5px;
 }
 
-/*Accessability, making it highlight a border*/
 a:hover {
   border-radius: 8px;
 /*  border: solid 2px purple;*/
 }
+/*Accessability, making it highlight a border*/
 a:focus {
   border-radius: 8px;
   border: solid 2px purple;
