@@ -35,7 +35,15 @@ function getwidth() {
   var width = window.innerWidth;
   // widthtarget.innerHTML = width + " pixels";
   console.log("Width is: " + width + " pixels.");
-
+  if (width <= 300) {
+    console.log("Width is mobile ready!");
+    document.getElementById('mobile_menu').disabled = false;
+    document.getElementById('menu').disabled = true;
+    //do not include padding on the sides of text
+  } else {
+    console.log("Not a mobile screen.");
+    document.getElementById('mobile_menu').disabled = true;
+  }
 }
 /*
 
