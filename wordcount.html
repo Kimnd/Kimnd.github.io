@@ -14,7 +14,7 @@
       body {
       	background-color: Khaki;
       }
-      content {
+      main {
         display: grid;
         grid-template-areas:
           "wordcounter textarea textarea"
@@ -52,7 +52,7 @@
   <body>
   	<nav id="menu"></nav>
     
-    <content>
+    <main>
       <!-- <div class="sticky"> -->
         <div class="sticky wordcounter">Word count: <span id="count">0</span></div>
         <div class="infoone">current char: <span id="character">_</span></div>
@@ -61,7 +61,7 @@
       <!-- source for the auto-growing text area: https://css-tricks.com/auto-growing-inputs-textareas/ -->
       <span id="input" class="textarea" contenteditable></span>
        <!-- <textarea id='input'></textarea> -->
-    </content>
+    </main>
 <!--     <script>
       var input = document.getElementById('input');
       // document.addEventListener('keyup', function(){});

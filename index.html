@@ -3,6 +3,7 @@
   <head>
     <!-- <link rel="stylesheet" type="text/css" href="style/site.css"> -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
 
     <!-- <link rel="stylesheet" type="text/css" href="style/article_layout_test.css"> -->
     <script type="text/javascript" src="js/menu.js"></script>
@@ -11,6 +12,32 @@
 
     <meta charset="utf-8">
     <title>Fif's Website</title>
+     <style>
+    .rightImage {
+      display: flex;
+      flex-direction: row; /* Default layout, image to the right */
+    }
+
+    .rightImage img {
+      max-width: 50%; /* Ensure the image spans the container width */
+      margin-right: 10px; /* Add spacing between image and text */
+    }
+
+    /* Add a media query to change the layout when the width is reduced */
+    @media (max-width: 768px) {
+      .rightImage {
+        flex-direction: column; /* Image above the text */
+      }
+/*      div {
+        min-width: 200px;
+      }
+*/      .rightImage img {
+        max-width: 100%;
+        margin-right: 0; /* Remove right margin for vertical layout */
+        margin-bottom: 10px; /* Add spacing below the image */
+      }
+    }
+  </style>
   </head>
 
   <body onresize="getwidth()">
@@ -18,7 +45,7 @@
     <nav id="menu"></nav>
  
     <!-- <p id="widthtarget">s</p> -->
-    <content>
+    <main>
       <!-- <h1>About</h1> -->
       <div class="rightImage">
         <img src="images/Birthday_smile.jpg" alt="An image of Frankie Gallagher, smiling.">
@@ -29,7 +56,7 @@
           <p>I hope you find your visit to my little corner on the interwebz pleasant!</p>
         </div>
       </div>
-    </content>
+    </main>
     
     <footer id="foot"></footer>
 
