@@ -1,0 +1,66 @@
+Nitpicks And Notebooks
+
+In the last installment we talked about Bully's UI design--how it overwhelms with irrelevant info and brings to mind a school stalking its students with its aesthetic. So how would I improve it?
+
+I'll be taking a two-pronged approach. The first will be a redesign that avoids changes as much as possible--one that could potentially be slotted into the game as is. That'll address some of the more structural problems. My second redesign will be less constrained to the actual game, instead focusing only on making the best UI I can imagine. And we'll see where we go from there.
+
+Minimal Change design
+
+For the "minimal" redesign, the goal is to maximize the quality of the menus as they are while changing as little as possible. Now since I don't know how Bully actually works or how its menus are coded, there's no way to know how difficult any given change I propose may be. But I'm operating on some assumptions:
+    <ul>- moving a statistic to a different menu, not showing a statistic, or making a new page within the menu is easy</ul>
+    <ul>- making the menu dynamic, changing the story at all, or adding a new statistic to track isn't possible</ul>
+
+I'll aim to keep the aesthetic of the menus the same, attempting to streamline things so that they aren't as overwhelming. Even so, they'll still behave the way the menu in the game does--i.e. all the options that we wish to track throughout the game will be visible at the very start, and all in a static order.
+
+The most drastic change I'd like to make is to remove the "UPGRADES" menu entirely. In the new version, the regular "STATS" menu has an additional tab for upgrades, and lists all of the upgrades under their associated categories found in the base game in alphabetical order. I say this is a drastic change mostly because I don't know how the menu works under the hood, so it's possible that for some reason the game isn't able to display text in a specific way depending on the sub-menu it's a part of.
+
+The other changes I have in mind are smaller. Reducing the statistics the game displays is the main thing I have in mind. The best way to reduce them is to find the statistics that are extremely granular. Here's an example--a section tracks the total amount of photos you've taken and, separately, how many pictures you've taken of townsfolk, teachers, prefects, and each of the five cliques. This applies to many of the statistics in the game, where the stat is tracked individually for different types of people.
+
+In our streamlined version of the menu, statistics that are split into multiple types of people this way are instead categorized by gameplay function. Tracking all of the cliques separately is cluttered, and it totally ignores those who aren't in cliques. So instead they'll be merged into "Kids". "Students" wouldn't work, since the one of the cliques technically doesn't go to school, and "Opponents" also wouldn't work since plenty of the students aren't meant to be fought. After that, merging "Teachers" and "Prefects" into "Authority" makes more sense to me, and it also would include the police officers that serve as defacto prefects when you're not on school grounds. This would leave the townspeople as their own kind of "misc" section, but that makes sense from a story perspective. As a child, your peers are the people you think about the most, and the adults that affect your life are also extremely important. But that attention doesn't need to be paid to people who aren't your age or part of your life.
+
+Radical
+
+While the changes explored in the first section aren't eye-catching, they're the bric-a-brack that form the foundation for the more radical departures I'm interested in.
+
+The most striking change is the medium of the menu. Reflecting its personal nature to each player, this stats menu will be styled as if it is the protagonist's school notebook.
+    <(stats menu at start of game) general tab notebook image>
+Aesthetics
+This page is the equivalent of the "general" tab in the official game. It offers some immediately striking differences: it's handwritten, the info is in sentences, and there aren't as many points. This presentation focuses on the character the player is piloting and his interpretation of the events we've seen. As an example, the "Been stuck here 11hr, 48min" scrawled at the top of the page is the same as the "Time Played" statistic--having him write about being "stuck here" makes his aggressive attitude understandable. Combine that with another key feature of this menu, and we have a very potent storytelling tool.
+
+Mechanical Changes
+The primary gameplay feature of this redesign is that it can change during the course of the game. This will mostly be achieved by passing Math Class minigames, upgrading the menu to display more complex things. But I also mean this in a more subtle way.
+
+Since the class minigames are entirely optional, it's important to design the base menu to carry some story and gameplay weight, even without any upgrades. menu we saw earlier. It covered basic information like how far into the game the player is, how often they've done basic actions, etc. Importantly, it can also change based on story progression--for example, one of the statistics the game tracks that I find very amusing is the "Hit By Car" statistic. If that statistic ever ticks past 0, that page will get an additional line at the bottom in all caps: "I GOT HIT BY A CAR", adding "..2 TIMES", "3 TIMES", etc. for each additional time. But if it never happens, it never shows up on the page.
+
+This is what I mean by this menu being a potent storytelling tool. If the menu can react to the events in the game, it makes the world feel far more real. Jimmy isn't just a vessel for the player's actions, he's his own person with his own thoughts and feelings. Sure, the player can deliberately make him run into cars because they think it's funny, but he'll have his own thoughts!
+
+The way the stats menu changes based on the amount the player passes Math class is more complex though--we'll explore it with the "fighting" tab. As we saw in the base game, the Stats menu is split into smaller menus dedicated to specific kinds of things. For my redesign, I decided that these tabs should be the reward for passing Math 1. The level 1 classes in this game are rather easy to pass--mostly they're there to give the player a taste of the rewards yet to come. So once the player passes Math one, they'll get access to the school, fight, social, $$$, and winning tabs.
+
+    <img src="../images/new_bully_ui/fighting_lvl1.jpg" alt="example image of lvl 1 fight tab">
+
+This is more tabs than the base game has, which could easily be overwhelming, but these pages are far less complex than the ones in the game. Indeed, they'll all fit on a single page. The 'FIGHTING!!' page, for example, is split into three sections--two stats for hand-to-hand, three for weapons, and three for general fighting. As on the base page we saw above, these are written as sentences rather than as statistics, and don't present concrete numbers the way they do in the base game. It's still useful if you're the kind of player who wants to know how to Git Gud as they say, offering verbal feedback in the form of a description of what you're best and worst at. But it doesn't overwhelm you with a long list of exactly how many of each type of enemy you've punched in the face.
+
+If the player is intrigued by this new smorgasbord of information and wants to know more, they can go and pass Math 3, at which point we change the page to be closer in information to the base game's--but presented quite differently:
+    <img src="../images/new_bully_ui/fighting_lvl3_h-to-h.jpg" alt="example image of lvl 3 fight tab">
+    <img src="../images/new_bully_ui/fighting_lvl3_weapons.jpg" alt="example image of lvl 3 fight tab">
+    <img src="../images/new_bully_ui/fighting_lvl3_overall.jpg" alt="example image of lvl 3 fight tab">
+By using a table, we take advantage of the horizontal screen real estate that would otherwise be wasted in a list. Note, too, that each of the tables is sorted top-to-bottom(or left-to-right, in the hand-to-hand table's case) by the amount of times the technique or enemy's been used or beaten. I also made sure to make it so that only techniques or enemies that have been encountered actually appear to minimize clutter.
+
+Either way, this makes the information far easier to digest while maintaining the slap-dash, personal touch of a person writing by hand--the "I got knocked out" column of the "general" fighting table is a noteworthy example. But it also shows a bit of growth on Jimmy's part--in the previous page, the paper was wide ruled and the handwriting seemed to alternate between capital and lowercase letters at random. Here, he's showing a far more keen eye for precision. It would make sense that a kid choosing to track information about how good he is at hitting people would use information from that class to improve that keeping track of hitting people he's doing in his spare time.
+
+Finally, we have the penultimate menu upgrade the player can achieve:
+    <img src="../images/new_bully_ui/fighting_lvl5_h-to-h.jpg" alt="example image of lvl 3 fight tab">
+    <img src="../images/new_bully_ui/fighting_lvl5_weapons.jpg" alt="example image of lvl 3 fight tab">
+    <img src="../images/new_bully_ui/fighting_lvl5_overall.jpg" alt="example image of lvl 3 fight tab">
+
+Ah, the true pinnacle of scholastic mathematics--at least to my mind--graph paper. This one includes percentages, providing more convenience and rewarding dedicated players that really want more detailed information. This final level also adds a new tab, "misc", keeping the sentence structure of the general page for very niche statistics that aren't covered in the other tabs. Like the "Times Slipped On Banana Skin" statistic.
+
+Conclusion
+
+Fanciful thinking has lead us on quite the journey. As I've said, the overhaul of the UI I've proposed would only be possible in a totally new version of Bully. But even so, I think this new system fixes a lot of the issues we outlined in our previous analysis: players can choose to get more information if they wish, Math class has a far greater purpose to it, and it emphasizes the game's core appeal of being a kid all over again.
+
+More than any other game I've heard of, Bully inadvertently captures the mundane joy of a school year--of the tangible feeling you have as a kid that you're changing. It's the sort of thing that isn't really easy to capture in a single moment. Rather it reveals itself in standing in front of your school on the last day of the year remembering how eager you were to get out of this place. In flipping through your notes to that "BEEN STUCK HERE FOR A WEEK" you scrawled in the margins during your second Math class.
+
+But you're different now. You know how to use graph paper, round-house kick a dude to his knees, and get somebody to kiss you!
+
+After a few seconds, you pull out a pen and cross out the "STUCK" part of that note.
