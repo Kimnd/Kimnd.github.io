@@ -1,12 +1,13 @@
 /*
 colors
-blue yonder: #547AA5;
-linkedin: #2867B2;
-github: #333333;
-gmail
-  red M: #E34D42;
-  envelope: #F3F3E8;
-  shadow: #B0B0A6;
+
+background: FFFFDB (light yellow)
+selections: 99621E (golden brown)
+            FFA500 (orange for the web)
+
+accent colors: 2176AE (honolulu blue)
+               A3A3A3 (silver)
+abcdefghijklmnop
 */
 body {
   display: grid;
